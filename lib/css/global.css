@@ -5,4 +5,72 @@
   font-size: 12px;
   font-family: Arial;
 }
+html,
+body,
+div,
+input,
+button,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  list-style-type: none;
+}
+ul li {
+  outline: none;
+}
+.container {
+  width: 1320px;
+  margin: 0 auto;
+}
+.xn-light {
+  height: 30px;
+  background: #f0f0f0;
+}
+.xn-light ul {
+  float: right;
+  height: 30px;
+  line-height: 30px;
+}
+.xn-light ul li {
+  float: left;
+  color: #898989;
+}
+.xn-light ul li a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #898989;
+}
+.xn-header {
+  height: 88px;
+  line-height: 88px;
+}
+.xn-header .logo {
+  float: left;
+  padding-top: 20px;
+}
+.xn-header ul {
+  width: 550px;
+  float: left;
+  padding-left: 20px;
+}
+.xn-header ul li {
+  float: left;
+  font-size: 14px;
+}
+.xn-header ul li a {
+  padding: 0 22px;
+  text-decoration: none;
+  color: #505050;
+}
+.xn-header .rside {
+  width: 386px;
+  line-height: 88px;
+  float: right;
+}
+.xn-header .rside img {
+  vertical-align: middle;
+  padding-left: 20px;
+}
 /*# sourceMappingURL=global.css.map */
