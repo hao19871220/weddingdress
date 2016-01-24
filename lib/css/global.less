@@ -17,9 +17,7 @@ button,
 ul {
     margin: 0;
     padding: 0;
-    border: 0;
-    background: none;
-    list-style-type: none;
+    list-style-type: none;outline: none;
 }
 
     ul li {
@@ -66,12 +64,12 @@ ul {
     .xn-header ul {
         width: 550px;
         float: left;
-        padding-left:20px;
+        padding-left: 20px;
     }
 
         .xn-header ul li {
             float: left;
-            font-size:14px;
+            font-size: 14px;
         }
 
             .xn-header ul li a {
@@ -79,12 +77,55 @@ ul {
                 text-decoration: none;
                 color: @color;
             }
+
     .xn-header .rside {
-    width:386px;
-    line-height:88px;
-    float:right;
+        width: 386px;
+        line-height: 88px;
+        float: right;
     }
+
         .xn-header .rside img {
-        vertical-align:middle;
-        padding-left:20px;
+            vertical-align: middle;
+            padding-left: 20px;
         }
+
+.xn-foot {
+    height: 165px;
+    padding: 35px 0;
+}
+
+    .xn-foot .fleft {
+        width: 280px;
+        padding-left: 100px;
+        float: left;
+        height: 165px;
+    }
+
+    .xn-foot .fright {
+        width: 280px;
+        height: 165px;
+        padding-left: 20px;
+        float: left;
+        border-left: solid 1px #ddd;
+    }
+
+    .xn-foot label {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 28px;
+    }
+
+    .xn-foot p a {
+        color: #505050;
+    }
+    .left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.center {
+    text-align: center;
+}

@@ -1,0 +1,54 @@
+﻿body {
+}
+.com-main {
+    width:1000px;
+    margin:0 auto;
+}
+.com-header {
+    width:100%;
+    overflow:hidden;
+    padding-top:20px;
+}
+    .com-header .rside {
+        width:485px;
+        float:right;
+    }
+.rside .sp-title {
+    padding:20px 0;
+    font-size:16px;
+    font-weight:bold;
+}
+.rside .sp-price {
+    line-height:24px;
+    padding:5px 0 25px 0;
+}
+.rside .num {
+    color: #ff39a0; font-size:22px; font-weight: bold; padding: 0 22px;
+}
+.rside .sp-bj {
+    height:24px;background:#ff39a0;padding:5px 10px;color:#fff;
+}
+.rside .original {
+    color: #898989;
+    padding:0 10px 0 35px;
+}
+.rside .ordel {
+    color: #898989;
+   font-size:22px;
+   text-decoration:line-through;
+}
+.rside .sp-line {
+    height:40px;
+    border-top:solid 1px #ddd;
+    border-bottom:solid 1px #ddd;
+    line-height:40px;
+}
+.rside .sales {
+    height:20px;
+    width:160px;
+    line-height:20px;
+    float:right;
+    border-left:dotted 1px #ddd;
+    margin-top:10px;
+    padding-left:25px;
+}

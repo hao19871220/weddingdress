@@ -4,6 +4,37 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>购物车</title>
     <link href="../lib/css/global.css" rel="stylesheet" />
+    <link href="../lib/css/shoping.css" rel="stylesheet" />
+    <script src="../lib/js/jquery-1.9.1.min.js"></script>
+    <script>
+        var num = 1;
+        $(function () {
+            $(".itxt").val(num);
+            $('.p-add').click(function () {
+                num = parseInt($(this).parent().parent().find(".itxt").val());
+                num += 1;
+                $(this).parent().parent().find(".itxt").val(num);
+            });
+            $('.p-reduce').click(function () {
+                num = parseInt($(this).parent().parent().find(".itxt").val());
+                num -= 1;
+                if (num < 1) {
+                    num = 1;
+                    return;
+                }
+                $(this).parent().parent().find(".itxt").val(num);
+            });
+            $(".checkbox").click(function () {
+                var $subs = $(".checkbox");
+                $("#checkall").prop("checked", $subs.length == $subs.filter(":checked").length ? true : false);
+            });
+        })
+        function CheckAll(val) {
+            $(".checkbox").each(function () {
+                this.checked = val;
+            });
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -21,7 +52,7 @@
             </div>
         </div>
         <div class="container xn-header">
-            <img src="/lib/img/logo.png" alt="" class="logo" />
+            <img src="../lib/img/logo.png" alt="" class="logo" />
             <ul>
                 <li><a href="#">婚礼购物</a></li>
                 <li><a href="#">私人定制</a></li>
@@ -30,10 +61,199 @@
                 <li><a href="#">最美新娘</a></li>
             </ul>
             <div class="rside">
-                <img src="/lib/img/prove.jpg" alt="" /> 100%正品
-                <img src="/lib/img/num.jpg" alt="" /> 30万方实体城<img src="/lib/img/pg.png" alt="" /><img src="/lib/img/news.png" alt="" />
+                <img src="../lib/img/prove.jpg" alt="" /> 100%正品
+                <img src="../lib/img/num.jpg" alt="" /> 30万方实体城<img src="../lib/img/pg.png" alt="" /><img src="../lib/img/news.png" alt="" />
             </div>
         </div>
     </header>
+    <div class="container">
+        <div class="title">我的购物袋</div>
+        <div class="xn-cart">
+            <div class="cart-thead">
+               <div class="left t-checkbox" style="height:40px;"></div> 
+                <div class="left t-goods">产品</div> 
+                <div class="left t-info">描述</div>
+                <div class="left t-type">类别</div>
+                <div class="left t-color">颜色</div> 
+                <div class="left t-size">尺寸</div>
+                <div class="left t-num">数量</div>
+                <div class="left t-price">价格</div>
+                <div class="left t-del">移除</div> 
+            </div>
+            <div class="item-list">
+                <div class="left t-checkbox" style=""><input type="checkbox" class="checkbox"/></div>
+                <div class="left t-goods"><img src="../lib/img/shoping/gd01.jpg" /></div>
+                <div class="left t-info">
+                    <div class="item-msg left">
+                        <label>纽约高级婚纱</label>
+                        <p>ref.2514/302</p>
+                    </div>
+                    <img src="../lib/img/shoping/xin.jpg" class="p-xin"/>
+                </div>
+                <div class="left t-type">标准</div>
+                <div class="left t-color"><div class="b-color" style=" background: #644499; "></div></div>
+                <div class="left t-size">39</div>
+                <div class="left t-num">
+                    <div class="p-num">
+                        <input type="text" class="itxt" />
+                        <div class="p-img">
+                            <img src="../lib/img/shoping/add.jpg" class="p-add"/>
+                            <img src="../lib/img/shoping/reduce.jpg" class="p-reduce"/>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="left t-price">￥99.5</div>
+                <div class="left t-del"> ╳</div> 
+            </div>
+            <div class="item-list">
+                <div class="left t-checkbox" style=""><input type="checkbox" class="checkbox" /></div>
+                <div class="left t-goods"><img src="../lib/img/shoping/gd02.jpg" /></div>
+                <div class="left t-info">
+                    <div class="item-msg left">
+                        <label>时尚西装小西服</label>
+                        <p>ref.2514/302</p>
+                    </div>
+                    <img src="../lib/img/shoping/xin.jpg" class="p-xin" />
+                </div>
+                <div class="left t-type">私人订制</div>
+                <div class="left t-color"><div class="b-color"></div></div>
+                <div class="left t-size">39</div>
+                <div class="left t-num">
+                    <div class="p-num">
+                        <input type="text" class="itxt" />
+                        <div class="p-img">
+                            <img src="../lib/img/shoping/add.jpg" class="p-add" />
+                            <img src="../lib/img/shoping/reduce.jpg" class="p-reduce" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="left t-price">￥99.5</div>
+                <div class="left t-del"> ╳</div>
+            </div>
+            <div class="item-list">
+                <div class="left t-checkbox" style=""><input type="checkbox" class="checkbox" /></div>
+                <div class="left t-goods"><img src="../lib/img/shoping/gd03.jpg" /></div>
+                <div class="left t-info">
+                    <div class="item-msg left">
+                        <label>玫瑰花</label>
+                        <p>ref.2514/302</p>
+                    </div>
+                    <img src="../lib/img/shoping/xin.jpg" class="p-xin" />
+                </div>
+                <div class="left t-type">高端定制</div>
+                <div class="left t-color"><div class="b-color" style=" background: #644499; "></div></div>
+                <div class="left t-size">39</div>
+                <div class="left t-num">
+                    <div class="p-num">
+                        <input type="text" class="itxt" />
+                        <div class="p-img">
+                            <img src="../lib/img/shoping/add.jpg" class="p-add" />
+                            <img src="../lib/img/shoping/reduce.jpg" class="p-reduce" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="left t-price">￥99.5</div>
+                <div class="left t-del"> ╳</div>
+            </div>
+            <div class="options-box">
+                <div class="left t-checkall" style=""><input type="checkbox" class="checkall" id="checkall" onclick="CheckAll(this.checked)" /> <span>全选</span></div>
+                <div class="toolbar">
+                    <label>共三件</label>
+                    <label style="padding:0 40px 0 10px;">运费：15元</label>
+                    <label>总价：<span style="font-weight:bold;">￥567</span></label>    
+                </div>
+            </div>
+            <div class="item-btn">
+                <div class="stbtn">结算</div>
+                <div class="vcbtn">领券</div>
+            </div>
+        </div>
+        <div class="xn-more">
+            <div class="more-title">推荐搭配</div>
+            <div class="more-content">
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m01.jpg" />
+                    <p>￥6589</p>
+                </div>
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m02.jpg" />
+                    <p>￥6589</p>
+                </div>
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m03.jpg" />
+                    <p>￥6589</p>
+                </div>
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m04.jpg" />
+                    <p>￥6589</p>
+                </div>
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m05.jpg" />
+                    <p>￥6589</p>
+                </div>
+            </div>
+        </div>
+        <div class="xn-more">
+            <div class="more-title">更多产品</div>
+            <div class="more-content">
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m06.jpg" />
+                    <p>￥6589</p>
+                </div>
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m07.jpg" />
+                    <p>￥6589</p>
+                </div>
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m08.jpg" />
+                    <p>￥6589</p>
+                </div>
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m09.jpg" />
+                    <p>￥6589</p>
+                </div>
+                <div class="more-list">
+                    <img src="../lib/img/shoping/m10.jpg" />
+                    <p>￥6589</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <footer>
+       <div class="container xn-foot">
+           <div class="fleft">
+               <label>商品集合</label>
+               <p>婚纱 (1725)</p>
+               <p>礼服 (635)</p>
+               <p>男士 (2514)</p>
+               <p>配件 (76)</p>
+           </div>
+           <div class="fright">
+               <label>网站</label>
+               <p>服务条款</p>
+               <p>隐私政策</p>
+               <p>版权政策</p>
+               <p>宣传资料</p>
+               <p>支持</p>
+           </div>
+           <div class="fright">
+               <label>虎丘婚纱</label>
+               <p>关于我们</p>
+               <p>服务理念</p>
+               <p>职位</p>
+               <p>联系我们</p>
+           </div>
+           <div class="fright">
+               <label>关注我们</label>
+               <p>虎丘婚纱为爱服务-苏州</p>
+               <p>2015 © All rights reserved. 虎丘婚纱</p>
+               <img src="../lib/img/wx.png" style="padding-right:10px;"/>
+               <img src="../lib/img/sina.png" />
+           </div>
+       </div>    
+   </footer>
 </body>
 </html>
