@@ -76,6 +76,29 @@ ul li {
   padding-left: 20px;
   cursor: pointer;
 }
+.xn-header .rside .new {
+    width:43px;
+    height:38px;
+    background:url(../img/pg.png) no-repeat;
+ margin-top:25px;
+  cursor: pointer;
+  float:left;
+  position:relative;
+}
+    .xn-header .rside .new-num {
+    width:16px;
+    height:16px;
+    line-height:16px;
+    color:#fff;
+    text-align:center;
+    position:absolute;
+    bottom:2px;
+    right:0;
+    }
+.xn-header .rside .zp {
+    width:280px;
+  float:left;
+}
 .xn-foot {
   height: 165px;
   padding: 35px 0;
