@@ -1,0 +1,15 @@
+﻿.com-content {
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+    .com-content img {
+        max-width: 1000px;
+        padding-bottom: 20px;
+    }
+
+.com-main {
+    overflow:hidden;
+    margin:30px auto;
+}
