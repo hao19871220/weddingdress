@@ -10,6 +10,180 @@
     }
 
 .com-main {
-    overflow:hidden;
-    margin:30px auto;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.com-share {
+    line-height: 30px;
+    padding: 20px 0 20px 200px;
+    float: left;
+}
+
+    .com-share img {
+        vertical-align: middle;
+        padding: 0 10px 3px 100px;
+    }
+
+#outer {
+    width: 950px;
+    float: left;
+    overflow: hidden;
+}
+
+#tab {
+    width: 152px;
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+
+    #tab li {
+        height: 200px;
+        cursor: pointer;
+    }
+
+        #tab li img {
+            height: 200px;
+            width: 152px;
+        }
+
+        #tab li.current {
+            /*border-bottom: 2px solid #644499;*/
+        }
+
+#content {
+    width: 798px;
+    float: left;
+    height: 600px;
+}
+
+    #content ul {
+        line-height: 25px;
+        display: none;
+    }
+
+    #content img {
+        width: 798px;
+        height: 600px;
+    }
+
+.com-side {
+    width: 345px;
+    float: right;
+}
+
+    .com-side .sd-title {
+        font-size: 20px;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .com-side .sd-num {
+        font-size: 16px;
+        font-weight: bold;
+        color: #f4581f;
+        text-align:center;
+        line-height:24px;
+    }
+    .sp-btn {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    float: left;
+}
+
+    .sp-btn .buybtn {
+        width: 119px;
+        height: 45px;
+        line-height: 45px;
+        color: #644499;
+        text-align: center;
+        font-size: 14px;
+        background: url(../img/commodity/b1.png) no-repeat;
+        float: left;
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .sp-btn .cartbtn {
+        width: 119px;
+        height: 45px;
+        line-height: 45px;
+        color: #fff;
+        text-align: center;
+        font-size: 14px;
+        background: url(../img/commodity/b2.png) no-repeat;
+        float: left;
+        margin-right: 35px;
+        cursor: pointer;
+    }
+
+    .sp-btn img {
+        padding: 12px 8px 0 0;
+        float: left;
+    }
+
+    .sp-btn span {
+        color: #644499;
+    }
+    .sp-custom {
+    width: 100%;
+    float: left;
+    padding: 15px 0 50px 0;
+}
+
+    .sp-custom input {
+        width: 15px;
+        height: 15px;
+        float: left;
+    }
+
+    .sp-custom div {
+        width: 60px;
+        float: left;
+    }
+.com-chose {
+    width:100%;
+    float:left;
+    height:360px;
+    margin-top:50px;
+}
+.cs-img {
+    width:300px;
+    height:50px;
+    line-height:50px;
+    text-align:center;
+    background:url(../img/no.png) no-repeat;
+    margin-bottom:5px;
+    font-size:14px;
+    cursor:pointer;
+}
+.xuan {
+    background:url(../img/xz.png) no-repeat;
+    color:#644499;
+}
+.cs-title {
+    padding-bottom:20px;
+}
+.cs-list {
+    width:300px;
+    height:36px;
+    line-height:36px;
+    border-bottom:solid 1px #ddd;
+}
+.cs-list select{
+    appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+    color:#505050;
+    height:36px;
+    line-height:36px;
+    width:130px;
+    outline:none;
+    border:0;
+    background: url("../img/down.png") no-repeat scroll right center transparent;
 }

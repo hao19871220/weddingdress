@@ -61,6 +61,62 @@
                     <img src="../lib/img/commodity/p06.jpg" />
                 </ul>
             </div>
+            <div class="com-share">
+                <img src="../lib/img/commodity/c1.png" alt="" />分享
+                <img src="../lib/img/commodity/c2.png" alt="" />收藏（40731人气）
+            </div>
+        </div>
+        <div class="com-side">
+            <div class="sd-title">春色暮光 花的嫁衣 新娘婚纱</div>
+            <div class="sd-num">￥5690.00</div>
+            <div class="com-chose">
+                <div class="cs-title">
+                    选择一种面料 
+                    <img src="../lib/img/up.png"  style="padding-left:10px;"/>
+                </div>
+                <div class="cs-img xuan">水晶网纱</div>
+                <div class="cs-img" style="margin-bottom:15px;">棉纺涤纶</div>
+                <div class="cs-list">
+                    <select>
+                        <option>选择装饰细节</option>
+                        <option>选择装饰细节</option>
+                    </select>
+                </div>
+                <div class="cs-list">
+                    <select>
+                        <option>选择腰型</option>
+                        <option>细腰</option>
+                    </select>
+                </div>
+                <div class="cs-list">
+                    <select>
+                        <option>选择摆型</option>
+                        <option>选择装饰细节</option>
+                    </select>
+                </div>
+                <div class="cs-list">
+                    <select>
+                        <option>选择装饰细节</option>
+                        <option>选择装饰细节</option>
+                    </select>
+                </div>
+                <div class="cs-list">
+                    <select>
+                        <option>选择装饰细节</option>
+                        <option>选择装饰细节</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="sp-custom">
+                <div>尺码定制</div>
+                <input type="checkbox"  id="checkbox" />
+            </div>
+            <div class="sp-btn">
+                <div class="buybtn">直接购买</div>
+                <div class="cartbtn">加入购物车</div>
+                <img src="../lib/img/commodity/ren.jpg" alt="" /> <span>询问</span>
+            </div>
         </div>
     </div>
     <div class="com-content">
@@ -153,6 +209,10 @@
     </footer>
     <script>
         $(function () {
+            $('.cs-img').click(function () {
+                $('.cs-img').removeClass('xuan');
+                $(this).addClass('xuan');
+            });
             window.onload = function () {
                 var $li = $('#tab li');
                 var $ul = $('#content ul');
@@ -170,44 +230,3 @@
     </script>
 </body>
 </html>
-<style>
-    #outer {
-        width:950px;
-        float:left;
-        overflow: hidden;
-    }
-
-    #tab {
-        width:152px;
-        overflow: hidden;
-        zoom: 1;
-        float:left;
-    }
-
-        #tab li {
-            height: 200px;
-            cursor: pointer;
-        }
-            #tab li img {
-                height: 200px;
-                width: 152px;
-            }
-             #tab li.current {
-                /*border-bottom: 2px solid #644499;*/
-            }
-
-    #content {
-        width:798px;
-        float:left;
-        height:600px;
-    }
-
-        #content ul {
-            line-height: 25px;
-            display: none;
-        }
-        #content img {
-            width: 798px;
-            height:600px;
-        }
-</style>
