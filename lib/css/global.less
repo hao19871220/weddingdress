@@ -8,7 +8,9 @@ body {
     font-size: 12px;
     font-family: Arial;
 }
-
+img a {
+    border:0;
+}
 html,
 body,
 div,
@@ -73,7 +75,7 @@ ul {
         }
 
             .xn-header ul li a {
-                padding: 0 22px;
+                padding: 15px 22px;
                 text-decoration: none;
                 color: @color;
             }
@@ -87,6 +89,7 @@ ul {
         .xn-header .rside img {
             vertical-align: middle;
             padding-left: 20px;
+            cursor:pointer;
         }
 
 .xn-foot {
@@ -118,7 +121,7 @@ ul {
     .xn-foot p a {
         color: #505050;
     }
-    .left {
+.left {
     float: left;
 }
 
@@ -129,3 +132,35 @@ ul {
 .center {
     text-align: center;
 }
+.xn-more {
+    width: 990px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.more-title {
+    line-height: 35px;
+    border-bottom: solid 1px #ddd;
+    font-weight: bold;
+    font-size:14px;
+}
+
+.xn-more .more-content {
+    padding-top: 15px;
+    overflow: hidden;
+}
+
+.xn-more .more-list {
+    width: 117px;
+    padding: 0 40px;
+    float: left;
+}
+
+    .xn-more .more-list p {
+        text-align: center;
+    }
+
+    .xn-more .more-list img {
+        width: 117px;
+        height: 161px;
+    }

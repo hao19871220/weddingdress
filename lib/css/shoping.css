@@ -88,9 +88,12 @@
         line-height: 20px;
     }
 
-        .xn-cart .item-msg label {
+        .xn-cart .item-msg div {
             font-size: 14px;
             font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .xn-cart .item-msg p {
@@ -184,6 +187,7 @@
     float: right;
     background: url(../img/shoping/btn01.png) no-repeat;
     margin-right: 20px;
+    cursor:pointer;
 }
 
 .xn-cart .stbtn {
@@ -192,37 +196,5 @@
     float: right;
     background: url(../img/shoping/btn02.png) no-repeat;
     margin-right: 80px;
+    cursor:pointer;
 }
-
-.xn-more {
-    width: 990px;
-    margin: 0 auto;
-    padding-bottom: 30px;
-}
-
-.more-title {
-    line-height: 35px;
-    border-bottom: solid 1px #ddd;
-    font-weight: bold;
-    font-size:14px;
-}
-
-.xn-more .more-content {
-    padding-top: 15px;
-    overflow: hidden;
-}
-
-.xn-more .more-list {
-    width: 117px;
-    padding: 0 40px;
-    float: left;
-}
-
-    .xn-more .more-list p {
-        text-align: center;
-    }
-
-    .xn-more .more-list img {
-        width: 117px;
-        height: 161px;
-    }

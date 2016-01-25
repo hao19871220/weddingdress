@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>商品展示</title>
     <link href="../lib/css/global.css" rel="stylesheet" />
     <link href="../lib/css/commodity.css" rel="stylesheet" />
     <link href="../lib/css/zoom.css" rel="stylesheet" />
     <script src="../lib/js/jquery-1.9.1.min.js"></script>
-    <script src="../lib/js/jquery.imagezoom.min.js"></script> 
+    <script src="../lib/js/jquery.imagezoom.min.js"></script>
 </head>
 <body>
     <header>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="container xn-header">
-            <img src="../lib/img/logo.png" alt="" class="logo" />
+            <a href="index.html"><img src="../lib/img/logo.png" alt="" class="logo" style="border:0;" /></a>
             <ul>
                 <li><a href="#">婚礼购物</a></li>
                 <li><a href="#">私人定制</a></li>
@@ -39,19 +39,32 @@
             </div>
         </div>
     </header>
-    <img src="../lib/img/commodity/banner.jpg" style="width:100%;"/>
+    <img src="../lib/img/commodity/banner.jpg" style="width:100%;" />
     <div class="com-main">
         <div class="com-header">
             <div class="box">
-                <ul class="tb-thumb" id="thumblist">
-                    <li class="tb-selected"><div class="tb-pic tb-s40"><a href="#"><img src="../lib/plugin/zoom/images/01_small.jpg" mid="../lib/plugin/zoom/images/01_mid.jpg" big="../lib/plugin/zoom/images/01.jpg" /></a></div></li>
-                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../lib/plugin/zoom/images/02_small.jpg" mid="../lib/plugin/zoom/images/02_mid.jpg" big="../lib/plugin/zoom/images/02.jpg" /></a></div></li>
-                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../lib/plugin/zoom/images/03_small.jpg" mid="../lib/plugin/zoom/images/03_mid.jpg" big="../lib/plugin/zoom/images/03.jpg" /></a></div></li>
-                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../lib/plugin/zoom/images/04_small.jpg" mid="../lib/plugin/zoom/images/04_mid.jpg" big="../lib/plugin/zoom/images/04.jpg" /></a></div></li>
-                    <li><div class="tb-pic tb-s40"><a href="#"><img src="../lib/plugin/zoom/images/05_small.jpg" mid="../lib/plugin/zoom/images/05_mid.jpg" big="../lib/plugin/zoom/images/05.jpg" /></a></div></li>
-                </ul>
-                <div class="tb-booth tb-pic tb-s310">
-                    <a href="../lib/plugin/zoom/images/01.jpg"><img src="../lib/plugin/zoom/images/01_mid.jpg" alt="美女" rel="../lib/plugin/zoom/images/01.jpg" class="jqzoom" /></a>
+                <div style="overflow:hidden;">
+                    <ul class="tb-thumb" id="thumblist">
+                        <li class="tb-selected"><div class="tb-pic tb-s40"><a href="#"><img src="../lib/img/commodity/01_small.jpg" mid="../lib/img/commodity/01_mid.jpg" big="../lib/img/commodity/01.jpg" /></a></div></li>
+                        <li><div class="tb-pic tb-s40"><a href="#"><img src="../lib/img/commodity/02_small.jpg" mid="../lib/img/commodity/02_mid.jpg" big="../lib/img/commodity/p05.jpg" /></a></div></li>
+                        <li><div class="tb-pic tb-s40"><a href="#"><img src="../lib/img/commodity/03_small.jpg" mid="../lib/img/commodity/03_mid.jpg" big="../lib/img/commodity/p06.jpg" /></a></div></li>
+                        <li><div class="tb-pic tb-s40"><a href="#"><img src="../lib/img/commodity/01_small.jpg" mid="../lib/img/commodity/04_mid.jpg" big="../lib/img/commodity/01.jpg" /></a></div></li>
+                        <li><div class="tb-pic tb-s40"><a href="#"><img src="../lib/img/commodity/02_small.jpg" mid="../lib/img/commodity/02_mid.jpg" big="../lib/img/commodity/p05.jpg" /></a></div></li>
+                    </ul>
+                    <div class="tb-booth tb-pic tb-s310">
+                        <a href="../lib/img/commodity/01.jpg"><img src="../lib/img/commodity/01_mid.jpg" alt="美女" rel="../lib/img/commodity/01.jpg" class="jqzoom" /></a>
+                    </div>
+                </div>
+               
+                <div class="com-share">
+                    <img src="../lib/img/commodity/c1.png" alt="" />分享
+                    <img src="../lib/img/commodity/c2.png" alt="" />收藏（40731人气）
+                </div>
+                <div class="com-make">
+                    <p>我们发现您正在进行婚纱的定制</p>
+                    <p>建议去您身边的虎丘婚纱体验店获取专业服务</p>
+                    <p>预约获得更专业的推荐和量体服务</p>
+                    <div class="make-btn">立即预约</div>
                 </div>
             </div>
             <div class="rside">
@@ -62,11 +75,9 @@
                     <label class="original">原价</label><label class="ordel">￥<span class="sys_item_mktprice">2998</span></label>
                 </div>
                 <div class="sp-line">
-                    <img src="../lib/img/commodity/pj.png" style="padding:10px 40px 0 0;"/>
-                    <label>评价</label>
-                    <div class="sales">
-                        2313件 销量
-                    </div>
+                    <img src="../lib/img/commodity/pj.png" style="padding:10px 40px 0 0;float:left;" />
+                    <div style="width:50px;float:left;">评价</div>
+                    <div class="sales"> 2313件 销量</div>
                 </div>
                 <!--规格属性-->
                 <div class="sys_item_spec">
@@ -74,12 +85,12 @@
                         <p>颜色：</p>
                         <div>
                             <ul class="sys_spec_img">
-                                <li data-aid="3"><a href="javascript:;" title="白色"><img src="../lib/img/commodity/1.png" alt="白色" /></a><i></i></li>
-                                <li data-aid="4"><a href="javascript:;" title="粉色"><img src="../lib/img/commodity/2.png" alt="粉色" /></a><i></i></li>
-                                <li data-aid="8"><a href="javascript:;" title="蓝色"><img src="../lib/img/commodity/3.png" alt="蓝色" /></a><i></i></li>
-                                <li data-aid="9"><a href="javascript:;" title="绿色"><img src="../lib/img/commodity/4.png" alt="绿色" /></a><i></i></li>
-                                <li data-aid="10"><a href="javascript:;" title="黄色"><img src="../lib/img/commodity/5.png" alt="黄色" /></a><i></i></li>
-                                <li data-aid="12"><a href="javascript:;" title="灰色"><img src="../lib/img/commodity/6.png" alt="灰色" /></a><i></i></li>
+                                <li data-aid="3"><a href="javascript:;" title="白色"><img src="../lib/img/commodity/c1.jpg" alt="白色" /></a><i></i></li>
+                                <li data-aid="4"><a href="javascript:;" title="粉色"><img src="../lib/img/commodity/c2.jpg" alt="粉色" /></a><i></i></li>
+                                <li data-aid="8"><a href="javascript:;" title="蓝色"><img src="../lib/img/commodity/c3.jpg" alt="蓝色" /></a><i></i></li>
+                                <li data-aid="9"><a href="javascript:;" title="绿色"><img src="../lib/img/commodity/c1.jpg" alt="绿色" /></a><i></i></li>
+                                <li data-aid="10"><a href="javascript:;" title="黄色"><img src="../lib/img/commodity/c2.jpg" alt="黄色" /></a><i></i></li>
+                                <li data-aid="12"><a href="javascript:;" title="灰色"><img src="../lib/img/commodity/c3.jpg" alt="灰色" /></a><i></i></li>
                             </ul>
 
                         </div>
@@ -99,8 +110,154 @@
                 <!--规格属性-->
                 <div class="sp-custom">
                     <div>尺码定制</div>
-                    <input type="checkbox"  />
+                    <input type="checkbox" onclick="fn_check()" id="checkbox"/>
                 </div>
+                <div class="com-size">
+                    <div class="s-list">
+                        <div>1.胸围<span><a>观看视频</a></span></div>
+                        <input type="text" />
+                        <div>2.腰围<span><a>观看视频</a></span></div>
+                        <input type="text" />
+                        <div>3.臀围<span><a>观看视频</a></span></div>
+                        <input type="text" />
+                        <div>4.高度<span><a>观看视频</a></span></div>
+                        <input type="text" />
+                    </div>
+                    <img src="../lib/img/commodity/dz.jpg" alt="" />
+                </div>
+                <div class="sp-btn">
+                    <div class="buybtn">直接购买</div>
+                    <div class="cartbtn">加入购物车</div>
+                    <img src="../lib/img/commodity/ren.jpg" alt="" /> <span>询问</span>
+                </div>
+                <div class="sp-promise">
+                    <div class="fut">服务承诺</div>
+                    <div class="futlist">
+                        <span>正品保证</span>
+                        <span>按时发货</span>
+                        <span>新到商品</span>
+                        <span>极速退款</span>
+                        <span>支付方式</span>
+                        <span>退货保障卡</span>
+                        <span>七天无理由退换</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--详情-->
+    <div class="com-main" id="outer">
+        <ul id="tab">
+            <li>个性化设置</li>
+            <li class="current">商品详情</li>
+            <li>累计评价</li>
+            <li>成交记录</li>
+        </ul>
+        <div id="content">
+            <ul>
+                个性化设置
+            </ul>
+            <ul style="display:block;">
+                <li>
+                    <div class="parameter">
+                        <div class="pm-title">产品参数</div>
+                        <div class="pm-content">
+                            <div class="pm-side">
+                                <p>摆型：蓬蓬裙</p>
+                                <p>尺码：XL L M S</p>
+                                <p>服装款式细节：钉珠</p>
+                                <p>网纱：网纱</p>
+                                <p>适用场景：酒店室内</p>
+                                <p>腰型：中腰</p>
+                            </div>
+                            <div class="pm-side">
+                                <p>领型：深V型</p>
+                                <p>上市年份季节：2015年秋季</p>
+                                <p>钉珠：水晶管子</p>
+                                <p>袖长：有袖披肩</p>
+                                <p>流行元素：绑带</p>
+                            </div>
+                            <div class="pm-side">
+                                <p>颜色：白色</p>
+                                <p>风格：韩版</p>
+                                <p>面料：网纱</p>
+                                <p>适用年龄：18-25周岁</p>
+                                <p>服饰工艺：立体裁剪</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com-content">
+                        <img src="../lib/img/commodity/p01.jpg" alt="" />
+                        <img src="../lib/img/commodity/t01.jpg" alt="" />
+                        <img src="../lib/img/commodity/p02.jpg" alt="" />
+                        <img src="../lib/img/commodity/t02.jpg" alt="" />
+                        <img src="../lib/img/commodity/p03.jpg" alt="" />
+                        <img src="../lib/img/commodity/p04.jpg" alt="" />
+                        <img src="../lib/img/commodity/t03.jpg" alt="" />
+                        <img src="../lib/img/commodity/p05.jpg" alt="" />
+                        <img src="../lib/img/commodity/p06.jpg" alt="" />
+                        <img src="../lib/img/commodity/t04.jpg" alt="" />
+                        <img src="../lib/img/commodity/p07.jpg" alt="" />
+                        <img src="../lib/img/commodity/p08.jpg" alt="" />
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                累计评价
+            </ul>
+            <ul>
+                成交记录
+            </ul>
+        </div>
+    </div>
+    <div class="xn-more">
+        <div class="more-title">推荐搭配</div>
+        <div class="more-content">
+            <div class="more-list">
+                <img src="../lib/img/shoping/m01.jpg" />
+                <p>￥6589</p>
+            </div>
+            <div class="more-list">
+                <img src="../lib/img/shoping/m02.jpg" />
+                <p>￥6589</p>
+            </div>
+            <div class="more-list">
+                <img src="../lib/img/shoping/m03.jpg" />
+                <p>￥6589</p>
+            </div>
+            <div class="more-list">
+                <img src="../lib/img/shoping/m04.jpg" />
+                <p>￥6589</p>
+            </div>
+            <div class="more-list">
+                <img src="../lib/img/shoping/m05.jpg" />
+                <p>￥6589</p>
+            </div>
+        </div>
+    </div>
+    <div class="xn-more">
+        <div class="more-title">更多产品</div>
+        <div class="more-content">
+            <div class="more-list">
+                <img src="../lib/img/shoping/m06.jpg" />
+                <p>￥6589</p>
+            </div>
+            <div class="more-list">
+                <img src="../lib/img/shoping/m07.jpg" />
+                <p>￥6589</p>
+            </div>
+            <div class="more-list">
+                <img src="../lib/img/shoping/m08.jpg" />
+                <p>￥6589</p>
+            </div>
+            <div class="more-list">
+                <img src="../lib/img/shoping/m09.jpg" />
+                <p>￥6589</p>
+            </div>
+            <div class="more-list">
+                <img src="../lib/img/shoping/m10.jpg" />
+                <p>￥6589</p>
             </div>
         </div>
     </div>
@@ -158,6 +315,19 @@
 
         //商品规格选择
         $(function () {
+            window.onload = function () {
+                var $li = $('#tab li');
+                var $ul = $('#content ul');
+
+                $li.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('current');
+                    $ul.css('display', 'none');
+                    $ul.eq($t).css('display', 'block');
+                })
+            }
             $(".sys_item_spec .sys_item_specpara").each(function () {
                 var i = $(this);
                 var p = i.find("ul>li");
@@ -203,6 +373,50 @@
                 $(_resp.price).text(_price);
             }
         })
+        function fn_check() {
+            var checkbox = document.getElementById('checkbox');//
+            if (checkbox.checked) {
+                $('.com-size,.com-make').show();
+            } else {
+                $('.com-size,.com-make').hide();
+            }
+        }
     </script>
 </body>
 </html>
+<style>
+    #outer {
+        margin: 20px auto;
+        overflow: hidden;
+    }
+
+    #tab {
+        overflow: hidden;
+        zoom: 1;
+        border-top: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+    }
+
+        #tab li {
+            float: left;
+            height: 40px;
+            cursor: pointer;
+            line-height: 40px;
+            padding: 0 20px;
+            font-size: 16px;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+            #tab li.current {
+                border-bottom: 2px solid #644499;
+            }
+
+    #content {
+    }
+
+        #content ul {
+            line-height: 25px;
+            display: none;
+        }
+</style>
