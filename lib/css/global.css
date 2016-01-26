@@ -102,7 +102,7 @@ ul li {
 .xn-foot {
   height: 165px;
   padding: 35px 0;
-  border-top:solid 1px #ddd;
+  /*border-top:solid 1px #ddd;*/
 }
 .xn-foot .fleft {
   width: 280px;

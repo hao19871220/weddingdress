@@ -10,6 +10,10 @@
     position: relative;
 }
 
+body {
+    background: #f6f6f6;
+}
+
 #slides {
     display: block;
     width: 100%;
@@ -57,7 +61,7 @@
         margin-left: 15px;
         border-radius: 5px;
         /*background: #FFF;*/
-        border:solid 1px #fff;
+        border: solid 1px #fff;
     }
 
         #pagination li a {
@@ -73,49 +77,180 @@
             background: #fff;
         }
 /*banner样式结束*/
- #outer {
-        width:100%;
-        margin: 20px auto;
-        overflow: hidden;
-    }
-
-    #tab {
-           width:600px;
-        overflow: hidden;
-        zoom: 1;
-        /*border-bottom: 1px solid #ddd;*/
-        margin:10px auto 0 auto;
-    }
-
-        #tab li {     
-            float: left;
-            height: 40px;
-            cursor: pointer;
-            line-height: 40px;
-            padding: 0 20px;
-            font-size: 14px;
-            font-weight: bold;
-            margin: 0 20px;
-        }
-
-            #tab li.current {
-                border-bottom: 2px solid #644499;
-            }
-         #outer hr {
-        color:#fff;
-        margin:0;
-        }
-
-    #content {
-        width:1200px;
-        margin:0 auto;
-    }
-
-        #content ul {
-            line-height: 25px;
-            display: none;
-        }
-.line {
-   height:1px;
-   background:#ddd;
+#outer {
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
 }
+
+#tab {
+    width: 600px;
+    overflow: hidden;
+    zoom: 1;
+    /*border-bottom: 1px solid #ddd;*/
+    margin: 10px auto 0 auto;
+}
+
+    #tab li {
+        float: left;
+        height: 40px;
+        cursor: pointer;
+        line-height: 40px;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 20px;
+    }
+
+        #tab li.current {
+            border-bottom: 2px solid #644499;
+        }
+
+#outer hr {
+    color: #fff;
+    margin: 0;
+}
+
+#content {
+    width: 1200px;
+    margin: 0 auto;
+    border-top: solid 1px #ddd;
+}
+
+    #content ul {
+        line-height: 25px;
+        display: none;
+    }
+
+.line {
+    height: 1px;
+    background: #ddd;
+}
+
+.tg-btn {
+    width: 87px;
+    height: 41px;
+    background: url(../img/bfbrode/tg.png) no-repeat;
+    color: #644499;
+    line-height: 41px;
+    text-align: center;
+    font-size: 14px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.com-main {
+    width: 100%;
+    overflow: hidden;
+}
+
+    .com-main .com-list {
+        width: 296px;
+        height: 416px;
+        margin: 0 2px 20px 2px;
+        background: #fff;
+        float: left;
+        cursor: pointer;
+    }
+
+    .com-main .com-img {
+        width: 296px;
+        height: 296px;
+    }
+
+.com-list .com-title {
+    font-size: 14px;
+    padding-top: 30px;
+    line-height: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.com-list .com-name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.com-list .com-span {
+    padding: 10px 5px 0 5px;
+    line-height: 24px;
+}
+
+    .com-list .com-span img {
+        vertical-align: middle;
+        padding-bottom: 2px;
+    }
+
+.youlove {
+    width: 1200px;
+    margin: 60px auto 20px auto;
+}
+
+.guess {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #644499;
+}
+
+.find {
+    text-align: center;
+    color: #ccc;
+    padding-top: 5px;
+    padding-bottom:40px;
+}
+/*图片滚动代码开始*/
+.box {
+    height: 120px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#roll {
+    width: 200%;
+}
+
+    #roll dd {
+        width: 200px;
+        height: 120px;
+        /*border: 1px solid #00EE00;*/
+        float: left;
+        /*margin-right: 5px;*/
+    }
+
+        #roll dd img {
+            width: 200px;
+            height: 120px;
+        }
+
+.box .prev {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    display: inline-block;
+    width: 39px;
+    text-align: center;
+    cursor: pointer;
+    background: url(../img/bfbrode/lh.png);
+    z-index: 90;
+    color: #fff;
+}
+.box .next {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    display: inline-block;
+    width: 39px;
+    text-align: center;
+    cursor: pointer;
+    background: url(../img/bfbrode/rh.png);
+    z-index: 90;
+    color: #fff;
+}
+.box .next {
+    right: 0;
+}
+/*图片滚动代码结束*/
