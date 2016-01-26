@@ -1,11 +1,29 @@
 ﻿<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>最美新娘</title>
     <link href="../lib/css/global.css" rel="stylesheet" />
     <link href="../lib/css/bfbride.css" rel="stylesheet" />
+    <script src="../lib/js/jquery-1.9.1.min.js"></script>
     <script src="../lib/js/banner.js"></script>
+    <script>
+        $(function () {
+            window.onload = function () {
+                var $li = $('#tab li');
+                var $ul = $('#content ul');
+
+                $li.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('current');
+                    $ul.css('display', 'none');
+                    $ul.eq($t).css('display', 'block');
+                })
+            }
+        })
+    </script>
 </head>
 <body>
     <header>
@@ -43,29 +61,38 @@
         </div>
     </header>
     <!-- banner代码 开始 -->
-    <div id="playBox">
-        <div class="pre"></div>
-        <div class="next"></div>
-        <div class="smalltitle">
-            <ul>
-                <li class="thistitle"></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-        </div>
-        <ul class="oUlplay">
-            <li><a href="" target="_blank"><img src="images/1.jpg" /></a></li>
-            <li><a href="" target="_blank"><img src="images/2.jpg" /></a></li>
-            <li><a href="" target="_blank"><img src="images/3.jpg" /></a></li>
-            <li><a href="" target="_blank"><img src="images/4.jpg" /></a></li>
-            <li><a href="" target="_blank"><img src="images/5.jpg" /></a></li>
-            <li><a href="" target="_blank"><img src="images/6.jpg" /></a></li>
+    <div id="full-screen-slider">
+        <ul id="slides">
+            <li style="background: url('../lib/img/bfbrode/banner.jpg') no-repeat center top; background-size: cover; "><a href="#" ></a></li>
+            <li style="background: url('../lib/img/commodity/banner.jpg') no-repeat center top; background-size: cover; "><a href="#"></a></li>
         </ul>
     </div>
     <!-- banner代码 结束 -->
+    <div class="com-main" id="outer">
+        <ul id="tab">
+            <li>热门</li>
+            <li>专题活动</li>
+            <li>婚尚咨询</li>
+            <li class="current">买家故事</li>
+        </ul>
+       <div class="line"></div>
+        <div id="content">
+            <ul>
+                热门
+            </ul>
+            <ul>
+                <li>
+                    专题活动
+                </li>
+            </ul>
+            <ul>
+                婚尚咨询
+            </ul>
+            <ul style="display:block;">
+                买家故事
+            </ul>
+        </div>
+    </div>
     <footer>
         <div class="container xn-foot">
             <div class="fleft">
