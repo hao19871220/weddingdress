@@ -1,0 +1,130 @@
+﻿body {
+}
+
+.logoside {
+    padding: 30px 0 0 30px;
+}
+
+.com-main {
+    margin-top: 80px;
+}
+
+.side {
+    height: 46px;
+    line-height: 46px;
+    color: #874491;
+}
+
+.lside {
+    width: 30%;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 60px;
+}
+
+.rside {
+    width: 195px;
+    height: 44px;
+    border: solid 1px #874491;
+    border-radius: 22px;
+    behavior: url(../lib/plugins/pie/PIE.htc);
+    font-size: 18px;
+    float: right;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.com-main .c-input {
+    width: 440px;
+    margin: 15px auto;
+    overflow: hidden;
+}
+
+.com-main .validate {
+    eight: 38px;
+    line-height: 38px;
+    width: 280px;
+    float: left;
+    border: solid 2px #ddd;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #6f43bd;
+    behavior: url(../lib/plugins/pie/PIE.htc);
+    text-align: center;
+}
+
+.com-main .c-title {
+    width: 100px;
+    line-height: 40px;
+    padding-right: 20px;
+    float: left;
+    text-align: right;
+    font-weight: bold;
+    height:40px;
+}
+
+.com-main input {
+    outline: none;
+    height: 38px;
+    line-height: 38px;
+    width: 280px;
+    float: left;
+    border: solid 2px #ddd;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #505050;
+    behavior: url(../lib/plugins/pie/PIE.htc);
+}
+
+.com-main .phone {
+    outline: none;
+    height: 38px;
+    line-height: 38px;
+    width: 168px;
+    float: left;
+    border: solid 2px #ddd;
+    border-left-width: 1px;
+    border-radius: 0 8px 8px 0;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #505050;
+    behavior: url(../lib/plugins/pie/PIE.htc);
+}
+
+.com-main .region {
+    outline: none;
+    height: 38px;
+    line-height: 38px;
+    width: 90px;
+    float: left;
+    border: solid 2px #ddd;
+    border-right-width: 0;
+    border-radius: 8px 0 0 8px;
+    padding-left: 10px;
+    font-size: 14px;
+    behavior: url(../lib/plugins/pie/PIE.htc);
+}
+
+.com-main .c-next {
+    width: 300px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    background: #6f43bd;
+    border-radius: 8px;
+    behavior: url(../lib/plugins/pie/PIE.htc);
+    float:left;
+}
+.com-main .c-mail, .com-main .c-mail a {
+    width: 300px;
+    line-height: 24px;
+    height: 24px;
+    color:#6f43bd;
+    float:left;
+}
