@@ -1,0 +1,108 @@
+﻿body {
+    background: url(../img/login/bj.jpg) no-repeat center 110px;
+}
+
+.logoside {
+    padding: 30px 0 0 30px;
+}
+
+.com-main {
+    margin-top: 216px;
+}
+
+    .com-main .c-pic {
+        width: 662px;
+        margin: 0 40px;
+        float: left;
+    }
+
+    .com-main .c-content {
+        width: 430px;
+        height: 300px;
+        border: solid 1px #644499;
+        border-radius: 8px;
+        background: #fff;
+        float: left;
+        padding: 20px 30px;
+        font-size: 14px;
+        behavior: url(../lib/plugins/pie/PIE.htc);
+    }
+
+        .com-main .c-content p {
+            font-weight: bold;
+            margin: 0;
+            line-height: 30px;
+        }
+
+    .com-main .c-input {
+        width: 380px;
+        margin: 6px auto;
+        overflow: hidden;
+    }
+
+    .com-main .c-title {
+        width: 60px;
+        line-height: 40px;
+        padding-left: 8px;
+        float: left;
+    }
+
+    .com-main input {
+        outline: none;
+        height: 38px;
+        line-height: 38px;
+        width: 280px;
+        float: left;
+        border: solid 1px #ddd;
+        border-radius: 8px;
+        padding: 0 10px;
+        font-size: 14px;
+        color: #505050;
+        behavior: url(../lib/plugins/pie/PIE.htc);
+    }
+
+    .com-main .c-nrong {
+        width: 300px;
+        margin: 30px 0 0 95px;
+    }
+    .com-main .c-btn {
+    height:42px;
+    line-height:42px;
+    background:#644499;
+     border-radius: 8px;
+     text-align:center;
+     color:#fff;
+     behavior: url(../lib/plugins/pie/PIE.htc);
+    }
+.forget {
+    width:50%;
+    float:left;
+    margin:25px 0;
+}
+.reg {
+    width:50%;
+    float:left;
+    margin:25px 0;
+     text-align:right;
+}
+.c-nrong a {
+    color:#644499;
+    cursor:pointer;
+    text-decoration:none;
+}
+.dlmode {
+     height:42px;
+    line-height:42px;
+    float:left;
+     padding-left:55px;
+    
+}
+    .dlmode a {
+    text-decoration:none;
+    color:#505050;
+    cursor:pointer;
+    }
+    .dlmode img {
+    vertical-align:middle;
+    padding-left:25px;
+    }
