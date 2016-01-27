@@ -25,7 +25,7 @@
         float: left;
         padding: 20px 30px;
         font-size: 14px;
-        behavior: url(../lib/plugins/pie/PIE.htc);
+        behavior: url(/lib/plugins/pie/PIE.htc);
     }
 
         .com-main .c-content p {
@@ -58,7 +58,7 @@
         padding: 0 10px;
         font-size: 14px;
         color: #505050;
-        behavior: url(../lib/plugins/pie/PIE.htc);
+        behavior: url(/lib/plugins/pie/PIE.htc);
     }
 
     .com-main .c-nrong {
@@ -72,7 +72,7 @@
      border-radius: 8px;
      text-align:center;
      color:#fff;
-     behavior: url(../lib/plugins/pie/PIE.htc);
+     behavior: url(/lib/plugins/pie/PIE.htc);
     }
 .forget {
     width:50%;
