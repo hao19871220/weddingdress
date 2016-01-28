@@ -8,6 +8,10 @@
 xn-header a img{
   border: 0;
 }
+html, body, div, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, blockquote, pre, form, fieldset, table, th, td, span {
+    padding: 0;
+    margin: 0;
+}
 html,
 body,
 div,
@@ -162,3 +166,64 @@ ul li {
   height: 161px;
 }
 /*# sourceMappingURL=global.css.map */
+/*图片滚动代码开始*/
+.box {
+    height: 120px;
+    /*border: 1px solid red;*/
+    overflow: hidden;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#roll {
+    width: 200%;
+}
+
+    #roll dd {
+        width: 200px;
+        height: 120px;
+        /*border: 1px solid #00EE00;*/
+        float: left;
+        /*margin-right: 5px;*/
+    }
+
+        #roll dd img {
+            width: 200px;
+            height: 120px;
+        }
+
+.box .prev {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    display: inline-block;
+    width: 39px;
+    text-align: center;
+    cursor: pointer;
+    background: url(../img/bfbrode/lh.png);
+    z-index: 90;
+    color: #fff;
+}
+.box .next {
+    position: absolute;
+    bottom: 0;
+    top:0;
+    display: inline-block;
+    width: 39px;
+    text-align: center;
+    cursor: pointer;
+    background: url(../img/bfbrode/rh.png);
+    z-index: 90;
+    color: #fff;
+}
+.box .next {
+    right: 0;
+}
+/*图片滚动代码结束*/
+.line {
+    width:1200px;
+    height:1px;
+    background:#ddd;
+    margin:15px auto;
+}

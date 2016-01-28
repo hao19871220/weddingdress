@@ -1,0 +1,132 @@
+﻿#outer {
+    width: 100%;
+    margin: 30px auto;
+}
+
+#tab {
+    overflow: hidden;
+    zoom: 1;
+    width: 740px;
+    margin: 0 auto;
+    /*background: #000;*/
+}
+
+    #tab li {
+        width: 370px;
+        float: left;
+        color: #fff;
+        /*height: 80px;*/
+        cursor: pointer;
+        line-height: 20px;
+        /*padding: 0 20px;*/
+        position: relative;
+        text-align: center;
+    }
+
+        #tab li p {
+            margin: 0;
+            text-align: center;
+            font-size: 18px;
+            color: #505050;
+            padding-bottom: 20px;
+        }
+
+        #tab li .shi {
+            background: #6f43be;
+        }
+
+        #tab li.current {
+            color: #000;
+            background: url(../img/hcustom/xz.png) no-repeat center bottom;
+        }
+
+#content {
+    border-top-width: 0;
+}
+
+    #content .list {
+        line-height: 25px;
+        display: none;
+        margin: 0 30px;
+        padding: 10px 0;
+    }
+.recommend {
+    overflow:hidden;
+}
+.recommend p {
+    padding-left: 25px;
+}
+
+.recommend .rc-list {
+    width: 100%;
+    height: 300px;
+    background: #ebebeb;
+    margin-bottom:10px;
+}
+
+    .recommend .rc-list .rc-img{
+        width: 440px;
+        height: 300px;
+        float: left;
+    }
+
+.recommend .rc-content {
+    width: 400px;
+    padding: 20px;
+    height:260px;
+    float:left;
+}
+.recommend .title {
+   font-weight:bold;
+   padding:0 0 10px 0;
+}
+.recommend .rc-content p{
+    padding:0;
+    margin:0;
+    line-height:24px;
+}
+.recommend .nrong {
+    height:190px;
+    overflow:hidden;
+}
+.recommend .follow {
+    line-height:40px;
+}
+.recommend .follow img{
+   vertical-align:middle;
+   width:35px;
+   height:35px;
+   padding-right:12px;
+}
+.designer {
+    width:100%;
+    padding:20px 0;
+    overflow:hidden;
+}
+.designer .ds-list{
+    width:100%;
+    margin-left:-10px;
+    float:left;
+}
+    .designer .ds-main {
+    width:210px;
+    height:210px;
+    float:left;
+    margin-left:10px;
+    position:relative;
+    margin-bottom:10px;
+    }
+.ds-title {
+    width:200px;
+    height:30px;
+    line-height:30px;
+    position:absolute;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    left:0;
+    bottom:0;
+    padding-left:10px;
+}
+.ds-name {
+    font-weight:bold;padding-right:10px;
+}
