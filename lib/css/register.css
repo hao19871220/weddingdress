@@ -62,7 +62,7 @@
     float: left;
     text-align: right;
     font-weight: bold;
-    height:40px;
+    height: 40px;
 }
 
 .com-main input {
@@ -78,7 +78,23 @@
     color: #505050;
     behavior: url(/lib/plugins/pie/PIE.htc);
 }
-
+.com-main .c-type {
+        appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+     outline: none;
+    height: 42px;
+    line-height: 42px;
+    width: 300px;
+    float: left;
+    border: solid 2px #ddd;
+    border-radius: 8px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #505050;
+     background: url(../img/login/sbj.jpg) no-repeat scroll right center transparent;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
 .com-main .phone {
     outline: none;
     height: 38px;
@@ -119,12 +135,128 @@
     background: #6f43bd;
     border-radius: 8px;
     behavior: url(/lib/plugins/pie/PIE.htc);
-    float:left;
+    float: left;
 }
+
 .com-main .c-mail, .com-main .c-mail a {
     width: 300px;
     line-height: 24px;
     height: 24px;
-    color:#6f43bd;
-    float:left;
+    color: #6f43bd;
+    float: left;
 }
+/*消费者注册*/
+#com-outer {
+    width: 100%;
+    margin: 15px auto;
+}
+
+#com-tab {
+    overflow: hidden;
+    zoom: 1;
+    margin-left: 110px;
+}
+
+    #com-tab li {
+        float: left;
+        color: #fff;
+        height: 40px;
+        cursor: pointer;
+        line-height: 40px;
+        margin: 0 20px;
+        font-size: 30px;
+        color: #833d8d;
+        font-weight: bold;
+    }
+
+        #com-tab li.com-current {
+            border-bottom: 2px solid #6f43bd;
+        }
+
+#com-content {
+    /*border: 1px solid #000;*/
+    border-top-width: 0;
+}
+
+    #com-content .com-list {
+        line-height: 25px;
+        display: none;
+        margin: 0 30px;
+        padding: 10px 0;
+    }
+
+        #outer {
+            width: 960px;
+            margin: 50px auto;
+        }
+
+        #tab {
+            overflow: hidden;
+            zoom: 1;
+            /*background: #000;*/
+        }
+
+            #tab li {
+                width: 240px;
+                float: left;
+                color: #fff;
+                height: 80px;
+                cursor: pointer;
+                line-height: 30px;
+                /*padding: 0 20px;*/
+                position: relative;
+            }
+                #tab li p {
+                    margin:0;
+                    text-align: center;
+                    font-size: 18px;
+                    color: #6f43be;
+                    padding-top:50px;
+                }
+                #tab li .line {
+                    width: 240px;
+                    position: absolute;
+                    height: 1px;
+                    /*left: 0;*/
+                    top: 19px;
+                    background: #6f43be;
+                }
+                #tab li .yuan {
+                    width: 47px;
+                    height:43px;
+                    background: #fff;
+                    position: absolute;
+                    left: 50%;
+                    top: 0;
+                   margin-left:-22px;
+                }
+
+                #tab li .rond {
+                    width: 36px;
+                    height: 36px;
+                    border: solid 2px #6f43be;
+                    background: #fff;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                }
+
+                #tab li .shi {
+                    background: #6f43be;
+                }
+
+                #tab li.current {
+                    color: #000;
+                    /*background: #ccc;*/
+                }
+
+        #content {   
+            border-top-width: 0;
+        }
+
+            #content .list {
+                line-height: 25px;
+                display: none;
+                margin: 0 30px;
+                padding: 10px 0;
+            }
+            

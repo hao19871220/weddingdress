@@ -1,0 +1,143 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>消费者注册</title>
+    <link href="../lib/css/global.css" rel="stylesheet" />
+    <link href="../lib/css/register.css" rel="stylesheet" />
+    <script src="../lib/js/jquery-1.9.1.min.js"></script>
+    <!--[if lt IE 10]>
+    <script src="../lib/plugins/pie/PIE.js"></script>
+    <![endif]-->
+    <script>
+        $(function () {
+            window.onload = function () {
+                var $li = $('#com-tab li');
+                var $list = $('#com-content .com-list');
+
+                $li.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('com-current');
+                    $list.css('display', 'none');
+                    $list.eq($t).css('display', 'block');
+                })
+            }
+        });
+    </script>
+</head>
+<body>
+
+    <div class="logoside">
+        <img src="../lib/img/logo.png" alt="" class="logo" style="border:0;" /><img src="/lib/img/prove.png" alt="" style="padding:0 13px 2px 30px;"/><img src="/lib/img/num.png" style="padding-bottom:2px;" alt="" />
+    </div>
+    <!-- html代码begin -->
+    <div id="com-outer">
+        <ul id="com-tab">
+            <li>个人注册</li>
+            <li class="com-current">官方注册</li>
+        </ul>
+        <div id="com-content">
+            <div class="com-list">
+                <div class="container com-main">
+                    <div class="c-input">
+                        <div class="c-title">手机号</div>
+                        <input class="region" placeholder="中国大陆 +86">
+                        <input type="text" placeholder="请输入手机号码" class="phone" />
+                    </div>
+                    <div class="c-input">
+                        <div class="c-title">验证</div>
+                        <div class="validate">发送验证码</div>
+                    </div>
+                    <div class="c-input">
+                        <div class="c-title">输入密码</div>
+                        <input type="password" />
+                    </div>
+                    <div class="c-input">
+                        <div class="c-title">再次输入密码</div>
+                        <input type="password" />
+                    </div>
+                    <div class="c-input">
+                        <div class="c-title"></div>
+                        <div class="c-next">下一步</div>
+                    </div>
+                    <div class="c-input">
+                        <div class="c-title"></div>
+                        <div class="c-mail"><a href="#">需要通过邮箱注册</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="com-list" style="display:block;">
+                <div id="outer">
+                    <ul id="tab">
+                        <li class="current">
+                            <div class="line" style="width:120px;right:0;"></div>
+                            <div class="yuan"><div class="rond shi"></div></div>
+                            <p>基本信息</p>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                            <div class="yuan"><div class="rond"></div></div>
+                            <p>影楼认证</p>
+                        </li>
+                        <li>
+                            <div class="line"></div>
+                            <div class="yuan"><div class="rond"></div></div>
+                            <p>签约</p>
+                        </li>
+                        <li>
+                            <div class="line" style="width:120px;left:0;"></div>
+                            <div class="yuan"><div class="rond"></div></div>
+                            <p>完成</p>
+                        </li>
+                    </ul>
+                    <div id="content">
+                        <div class="list" style="display:block;">
+                            <div class="com-main">
+                                <div class="c-input">
+                                    <div class="c-title">影楼信息</div>
+                                    <input type="text" placeholder="15个字符以内" maxlength="15" />
+                                </div>
+                                <div class="c-input">
+                                    <div class="c-title">手机号</div>
+                                    <input class="region" placeholder="中国大陆 +86">
+                                    <input type="text" placeholder="请输入手机号码" class="phone" />
+                                </div>
+                                <div class="c-input">
+                                    <div class="c-title">验证</div>
+                                    <div class="validate">发送验证码</div>
+                                </div>
+                                <div class="c-input">
+                                    <div class="c-title">影楼类型</div>
+                                    <select class="c-type"><option>请选择类型</option></select>
+                                </div>
+                                <div class="c-input">
+                                    <div class="c-title"></div>
+                                    <div class="c-next">下一步</div>
+                                </div>
+                                <div class="c-input">
+                                    <div class="c-title"></div>
+                                    <div class="c-mail"><a href="#">需要通过邮箱注册</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list">
+                            影楼认证
+                        </div>
+                        <div class="list">
+                            签约
+                        </div>
+                        <div class="list">
+                            完成
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- html代码end -->
+
+</body>
+</html>
