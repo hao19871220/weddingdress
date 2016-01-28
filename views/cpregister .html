@@ -25,6 +25,16 @@
                 })
             }
         });
+        function fn_next(num){
+            var $li = $('#tab li .rond');
+            var $list = $('#content .list');
+            $li.removeClass('shi');
+            for (var i = 0; i < num+1; i++) {
+                $li.eq(i).addClass('shi');
+            }
+            $list.css('display', 'none');
+            $list.eq(num).css('display', 'block');
+        }
     </script>
 </head>
 <body>
@@ -114,7 +124,7 @@
                                 </div>
                                 <div class="c-input">
                                     <div class="c-title"></div>
-                                    <div class="c-next">下一步</div>
+                                    <div class="c-next" onclick="fn_next(1)">下一步</div>
                                 </div>
                                 <div class="c-input">
                                     <div class="c-title"></div>
@@ -124,12 +134,17 @@
                         </div>
                         <div class="list">
                             影楼认证
+                            <div class="c-next" onclick="fn_next(0)">上一步</div>
+                            <div class="c-next" onclick="fn_next(2)">下一步</div>
                         </div>
                         <div class="list">
                             签约
+                            <div class="c-next" onclick="fn_next(1)">上一步</div>
+                            <div class="c-next" onclick="fn_next(3)">下一步</div>
                         </div>
                         <div class="list">
                             完成
+                            <div class="c-next" onclick="fn_next(2)">上一步</div>
                         </div>
                     </div>
                 </div>
