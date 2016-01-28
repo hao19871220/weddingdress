@@ -4,20 +4,25 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>高端定制</title>
     <link href="../lib/css/global.css" rel="stylesheet" />
-    <link href="../lib/css/hcustom.css" rel="stylesheet" />
+    <link href="../lib/css/hcustominfo.css" rel="stylesheet" />
     <script src="../lib/js/jquery-1.9.1.min.js"></script>
     <script src="../lib/js/imgroll.js"></script>
+    <!--[if lt IE 10]>
+    <script src="../lib/plugins/pie/PIE.js"></script>
+    <![endif]-->
     <script>
         $(function () {
             window.onload = function () {
                 var $li = $('#tab li');
-                var $list = $('#content .list');
-
+                var $list = $('#content .list'); 
                 $li.click(function () {
                     var $this = $(this);
                     var $t = $this.index();
+                    var $rond = $(this).find('.rond');
                     $li.removeClass();
                     $this.addClass('current');
+                    $('.rond').removeClass('shi');
+                    $rond.addClass('shi');
                     $list.css('display', 'none');
                     $list.eq($t).css('display', 'block');
                 })
@@ -26,7 +31,7 @@
     </script>
 </head>
 <body>
-    <header>
+    <header style="border-bottom:solid 1px #ddd;">
         <div class="xn-light">
             <div class="container">
                 <ul>
@@ -60,160 +65,161 @@
             </div>
         </div>
     </header>
+    <div class="container info-top">
+        <div class="info-title">定制订单01：VERSE高级婚纱</div>
+        <div class="info-bg">联系设计师</div>
+        <div class="info-bg">联系客服</div>
+    </div>
     <div id="outer">
         <ul id="tab">
-            <li>
-                <img src="../lib/img/hcustom/sr.png" />
-                <p>私人定制</p>
-            </li>
             <li class="current">
-                <img src="../lib/img/hcustom/gd.png" />
-                <p>高端定制</p>
+                <div class="line" style="width:86px;right:0;"></div>
+                <div class="yuan"><div class="rond shi"></div></div>
+                <p>我的定制需求</p>
             </li>
-
+            <li>
+                <div class="line"></div>
+                <div class="yuan"><div class="rond"></div></div>
+                <p>确认价格</p>
+            </li>
+            <li>
+                <div class="line"></div>
+                <div class="yuan"><div class="rond"></div></div>
+                <p>支付定金</p>
+            </li>
+            <li>
+                <div class="line"></div>
+                <div class="yuan"><div class="rond"></div></div>
+                <p>设计沟通</p>
+            </li>
+            <li>
+                <div class="line"></div>
+                <div class="yuan"><div class="rond"></div></div>
+                <p>设计定稿</p>
+            </li>
+            <li>
+                <div class="line"></div>
+                <div class="yuan"><div class="rond"></div></div>
+                <p>支付余款</p>
+            </li>
+            <li>
+                <div class="line"></div>
+                <div class="yuan"><div class="rond"></div></div>
+                <p>制作</p>
+            </li>
+            <li>
+                <div class="line" style="width:86px;left:0;"></div>
+                <div class="yuan"><div class="rond"></div></div>
+                <p>确认收货</p>
+            </li>
         </ul>
-        <img src="../lib/img/hcustom/banner.jpg" />
         <div id="content">
-            <div class="list">
-                <div class="container">私人定制</div>
-            </div>
             <div class="list" style="display:block;">
-                <div class="container recommend">
-                    <p>推荐设计师</p>
-                    <div class="design">
-                        <div class="rc-list">
-                            <img src="../lib/img/hcustom/icon1.jpg" class="rc-img" />
-                            <div class="rc-content">
-                                <div class="title">Jade Wen个人简介</div>
-                                <div class="nrong">
-                                    <p>资深婚纱设计师</p>
-                                    <p>《新娘》杂志特约专栏专家</p>
-                                    <p>多家杂志网站撰稿人</p>
-                                    <p>
-                                        现为jade wen 翡翠嫁衣首席设计师，
-                                        从事多年婚纱设计和制作，对婚纱潮流和婚纱定制卓有深刻
-                                        的了解。曾为多位明星名媛的婚礼设计定做婚纱和礼服。
-                                    </p>
-                                </div>
-                                <div class="follow">
-                                    <img src="../lib/img/hcustom/sj.png" /><span>设计大师</span>
-                                    <img src="../lib/img/hcustom/gz.png" style="padding-left:35px;" /><span>最受欢迎</span>
-                                </div>
-                            </div>
-                            <img src="../lib/img/hcustom/icon2.jpg" class="rc-img" />
-                        </div>
-                        <div class="rc-list">
-                            <img src="../lib/img/hcustom/icon1.jpg" class="rc-img" />
-                            <div class="rc-content">
-                                <div class="title">Jade Wen个人简介</div>
-                                <div class="nrong">
-                                    <p>资深婚纱设计师</p>
-                                    <p>《新娘》杂志特约专栏专家</p>
-                                    <p>多家杂志网站撰稿人</p>
-                                    <p>
-                                        现为jade wen 翡翠嫁衣首席设计师，
-                                        从事多年婚纱设计和制作，对婚纱潮流和婚纱定制卓有深刻
-                                        的了解。曾为多位明星名媛的婚礼设计定做婚纱和礼服。
-                                    </p>
-                                </div>
-                                <div class="follow">
-                                    <img src="../lib/img/hcustom/sj.png" /><span>设计大师</span>
-                                    <img src="../lib/img/hcustom/gz.png" style="padding-left:35px;" /><span>最受欢迎</span>
-                                </div>
-                            </div>
-                            <img src="../lib/img/hcustom/icon2.jpg" class="rc-img" />
+                <div class="info-list">
+                    <div class="if-left">
+                        我的需求
+                    </div>
+                    <div class="if-right">
+                        <p>我的腰比较细，这个做的时候可以在我的腰上加上丝带，走起路来会摆的那种，上身胸部的位置可以垫高一点。</p>
+                    </div>
+                </div>
+                <div class="info-list">
+                    <div class="if-left">
+                        个人信息
+                    </div>
+                    <div class="if-right">
+                        <p>脖长：21cm</p>
+                        <p>肩宽：34cm</p>
+                        <p>臂长：56cm</p>
+                        <p>肩到胸高点：32cm</p>
+                        <p>胸围：160 cm</p>
+                        <p>BP肩距（乳点肩距）：20cm</p>
+                        <p>腰围：160 cm</p>
+                        <p>臀围：160 cm</p>
+                    </div>
+                </div>
+                <div class="info-list">
+                    <div class="if-left">
+                        形象照片
+                    </div>
+                    <div class="if-right">
+                      <div class="if-pic">
+                          <img src="../lib/img/hcustom/pic.png" />
+                      </div>
+                        <div class="if-pic add">
+                            <img src="../lib/img/hcustom/add.png" />
                         </div>
                     </div>
-                  
-                    <p>设计师列表</p>
-                    <div class="designer">
-                        <div class="ds-list">
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>    
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>
-                            <div class="ds-main">
-                                <img src="../lib/img/hcustom/icon3.jpg" />
-                                <div class="ds-title"><span class="ds-name">劳克斯</span><span>资深婚纱设计师</span></div>
-                            </div>                      
+                </div>
+                <div class="info-list">
+                    <div class="if-left">
+                       参考照片
+                    </div>
+                    <div class="if-right">
+                        <div class="if-pic">
+                            <img src="../lib/img/hcustom/pic.png" />
+                        </div>
+                        <div class="if-pic add">
+                            <img src="../lib/img/hcustom/add.png" />
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="list">
+                确认价格
+            </div>
+            <div class="list">
+                支付定金
+            </div>
+            <div class="list">
+                设计沟通
+            </div>
+            <div class="list">
+                设计定稿
+            </div>
+            <div class="list">
+                支付余款
+            </div>
+            <div class="list">
+                制作
+            </div>
+            <div class="list">
+                确认收货
+            </div>
         </div>
     </div>
-    <div class="line"></div>
-        <div class="box">
+    <div class="gline"></div>
+    <div class="box">
 
-            <span class="prev"></span>
+        <span class="prev"></span>
 
-            <dl id="roll">
+        <dl id="roll">
 
-                <dd><img src="../lib/img/bfbrode/f01.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f01.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f02.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f02.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f03.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f03.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f04.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f04.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f05.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f05.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f06.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f06.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f01.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f01.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f02.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f02.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f03.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f03.jpg" /></dd>
 
-                <dd><img src="../lib/img/bfbrode/f04.jpg" /></dd>
+            <dd><img src="../lib/img/bfbrode/f04.jpg" /></dd>
 
-            </dl>
+        </dl>
 
-            <span class="next"></span>
+        <span class="next"></span>
 
-        </div>
+    </div>
     <footer>
         <div class="container xn-foot">
             <div class="fleft">

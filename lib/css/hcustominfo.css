@@ -1,0 +1,139 @@
+﻿body {
+}
+.info-top {
+    line-height:30px;
+    height:30px;
+    margin-top:55px;
+    margin-bottom:30px;
+}
+.info-title {
+    width:280px;
+    float:left;
+    font-size:16px;
+    text-align:center;
+}
+.info-bg {
+    width:100px;
+    height:30px;
+    background:#644498;
+    border-radius:15px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+    float:left;
+    margin-right:20px;
+    color:#fff;
+    text-align:center;
+    cursor:pointer;
+}
+#outer {
+    width: 100%;
+    margin: 50px auto;
+}
+
+#tab {
+    overflow: hidden;
+    zoom: 1;
+    width:1392px;
+    margin:0 auto;
+    /*background: #000;*/
+}
+
+    #tab li {
+        width: 174px;
+        float: left;
+        color: #fff;
+        height:110px;
+        cursor: pointer;
+        line-height: 30px;
+        /*padding: 0 20px;*/
+        position: relative;
+      
+    }
+
+        #tab li p {
+            margin: 0;
+            text-align: center;
+            font-size: 18px;
+            color: #505050;
+            padding-top: 50px;
+        }
+
+        #tab li .line {
+            width: 240px;
+            position: absolute;
+            height: 1px;
+            /*left: 0;*/
+            top: 16px;
+            background: #6f43be;
+        }
+
+        #tab li .yuan {
+            width: 41px;
+            height: 36px;
+            background: #fff;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -22px;
+        }
+
+        #tab li .rond {
+            width: 29px;
+            height: 29px;
+            border: solid 2px #6f43be;
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto;
+            behavior: url(/lib/plugins/pie/PIE.htc);
+        }
+
+        #tab li .shi {
+            background: #6f43be;
+        }
+
+        #tab li.current {
+            color: #000;
+              background:url(../img/hcustom/xzbj.png) no-repeat center bottom;
+        }
+
+#content {
+    border-top-width: 0;
+}
+
+    #content .list {
+        width:1260px;
+        margin:0 auto;
+        display: none;
+        padding: 30px;
+        background:#f8f8f8;
+    }
+#content .list .info-list {
+    width:100%;
+    overflow:hidden;
+    line-height:24px;
+    margin-bottom:20px;
+}
+.if-left {
+    width:95px;
+    float:left;
+    color:#898989;
+}
+.if-right {
+    width:1160px;
+    float:right;
+}
+.if-right p{
+   margin:0;
+}
+.if-pic {
+    width:155px;
+    height:210px;
+    margin:0 10px 10px 0;
+    float:left;
+}
+.if-pic img{
+    width:155px;
+    height:210px;
+}
+.add {
+    cursor:pointer;
+}
