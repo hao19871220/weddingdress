@@ -9,7 +9,23 @@
     <!--[if lt IE 10]>
     <script src="../lib/plugins/pie/PIE.js"></script>
     <![endif]-->
+    <script>
+        $(function () {
+            window.onload = function () {
+                var $li = $('#tab li');
+                var $list = $('#content .list');
 
+                $li.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('current');
+                    $list.css('display', 'none');
+                    $list.eq($t).css('display', 'block');
+                })
+            }
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -80,6 +96,63 @@
             <p>XXXX小区1603</p>
         </div>
     </div>
+    <!-- 详情begin -->
+    <div id="outer">
+        <div class="wk-long">
+            <ul id="tab">
+                <li>婚礼日记</li>
+                <li>我的收藏</li>
+                <li class="current">订单管理</li>
+                <li>我的定制</li>
+                <li>我的预约</li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="list">
+                婚礼日记
+            </div>
+            <div class="list">
+                我的收藏
+            </div>
+            <div class="list" style="display:block;">
+                <div id="or-outer">
+                    <ul id="or-tab">
+                        <li>婚礼日记</li>
+                        <li>我的收藏</li>
+                        <li class="or-current">订单管理</li>
+                        <li>我的定制</li>
+                        <li>我的预约</li>
+                    </ul>
+                    <div id="or-content">
+                        <div class="or-list">
+                            婚礼日记
+                        </div>
+                        <div class="or-list">
+                            我的收藏
+                        </div>
+                        <div class="or-list" style="display:block;">
+
+                            dd
+                        </div>
+                        <div class="or-list">
+                            我的定制
+                        </div>
+                        <div class="or-list">
+                            我的预约
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="list">
+                我的定制
+            </div>
+            <div class="list">
+                我的预约
+            </div>
+        </div>
+    </div>
+    <!-- 详情end -->
     <footer>
         <div class="container xn-foot">
             <div class="fleft">

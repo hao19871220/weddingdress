@@ -78,7 +78,8 @@ img {
         line-height: 50px;
         padding: 0 20px;
         margin: 0 60px;
-        font-size: 14px;
+        font-size: 16px;
+        font-weight:bold;
     }
 
         #tab li.current {
@@ -303,4 +304,44 @@ img {
     .orbasic p {
         margin: 0;
         line-height: 20px;
+    }
+    #or-outer {
+    width: 100%;
+    margin: 20px auto;
+}
+
+
+#or-tab {
+    width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+    height: 50px;
+}
+
+    #or-tab li {
+        float: left;
+        height: 50px;
+        cursor: pointer;
+        line-height: 50px;
+        padding: 0 20px;
+        margin: 0 60px;
+        font-size: 16px;
+        font-weight:bold;
+    }
+
+        #or-tab li.or-current {
+            height: 48px;
+            border-bottom: solid 2px #6f43be;
+        }
+
+#or-content {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+    #or-content .or-list {
+        line-height: 25px;
+        display: none;
+        padding: 10px;
     }
