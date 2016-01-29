@@ -1,0 +1,306 @@
+﻿body {
+}
+
+img {
+    vertical-align: middle;
+}
+/*高端定制作品详情star*/
+.wk-head {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.wk-title {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.wk-nrong {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+    .wk-nrong p {
+        margin: 0;
+    }
+
+.wk-bg {
+    width: 240px;
+    line-height: 30px;
+    margin: 40px auto;
+    font-size: 14px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.bgleft {
+    width: 130px;
+    float: left;
+    color: #6f43be;
+}
+
+.bgright {
+    width: 110px;
+    height: 30px;
+    background: #6f43be;
+    color: #fff;
+    border-radius: 15px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+    float: left;
+}
+
+#outer {
+    width: 100%;
+    margin: 20px auto;
+}
+
+    #outer .wk-long {
+        width: 100%;
+        height: 50px;
+        background: #ebebeb;
+    }
+
+#tab {
+    width: 1184px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+    height: 50px;
+}
+
+    #tab li {
+        float: left;
+        height: 50px;
+        cursor: pointer;
+        line-height: 50px;
+        padding: 0 20px;
+        margin: 0 60px;
+        font-size: 14px;
+    }
+
+        #tab li.current {
+            height: 48px;
+            border-bottom: solid 2px #6f43be;
+        }
+
+#content {
+    width: 1230px;
+    margin: 0 auto;
+}
+
+    #content .list {
+        line-height: 25px;
+        display: none;
+        padding: 10px;
+    }
+
+    #content .wk-pic {
+        text-align: center;
+    }
+
+        #content .wk-pic img {
+            padding-bottom: 8px;
+        }
+
+#play {
+    width: 1200px;
+    height: 640px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 5px auto;
+}
+
+    #play .change_a {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        cursor: pointer;
+        display: block;
+        overflow: hidden;
+        background: url(about:blank);
+    }
+
+    #play .prev_a {
+        left: 0;
+    }
+
+    #play .next_a {
+        right: 0;
+    }
+
+    #play .change_a span {
+        width: 24px;
+        height: 43px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -21px;
+        display: none;
+    }
+
+    #play .prev_a span {
+        background: url(../images/s_gallery_2012110702.png) no-repeat 0px -50px;
+        left: 20px;
+    }
+
+    #play .next_a span {
+        background: url(../images/s_gallery_2012110702.png) no-repeat -30px -50px;
+        right: 20px;
+    }
+
+    #play .img_ul {
+        position: relative;
+        z-index: 1;
+    }
+
+    #play li img {
+        width: 1200px;
+        height: 640px;
+    }
+
+.img_hd {
+    width: 610px;
+    overflow: hidden;
+    height: 96px;
+    padding: 2px 0;
+    margin: 30px auto;
+    position: relative;
+}
+
+    .img_hd ul {
+        position: absolute;
+        z-index: 1;
+    }
+
+        .img_hd ul li {
+            float: left;
+            width: 90px;
+            height: 90px;
+            border: 3px solid #fff;
+            cursor: pointer;
+            margin: 0 3px 0 1px;
+            overflow: hidden;
+            *display: inline;
+            padding: 1px;
+            text-align: center;
+        }
+
+            .img_hd ul li img {
+                height: 90px;
+                width: 90px;
+            }
+
+            .img_hd ul li.on {
+                border-color: #9fd2ed;
+            }
+
+    .img_hd .bottom_a {
+        background: url(../img/s_gallery_2012110702.png) no-repeat;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        display: block;
+        top: 50%;
+        margin-top: -11px;
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    .img_hd .prev_a {
+        background-position: 0 -24px;
+        left: 5px;
+    }
+
+    .img_hd .next_a {
+        background-position: -30px -24px;
+        right: 5px;
+    }
+
+/*高端定制作品详情end*/
+
+/*订单管理*/
+.orhead {
+    width: 1110px;
+    margin: 10px auto 38px auto;
+    overflow: hidden;
+}
+
+.portrait {
+    width: 150px;
+    height: 150px;
+    float: left;
+    position: relative;
+    border-radius: 50%;
+    border: solid 5px #a28fc1;
+    background: url(../img/or1.png) center center no-repeat;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+
+.onpic {
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    top: 122px;
+    right: 11px;
+}
+
+.datum {
+    width: 300px;
+    float: left;
+    padding: 0 20px;
+}
+
+.distance {
+    color: #644498;
+    font-size: 18px;
+    line-height: 80px;
+}
+
+.days {
+    font-size: 30px;
+}
+
+.username {
+    line-height: 30px;
+}
+
+.orname {
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 5px;
+    width: 100px;
+    float: left;
+}
+
+.oredit {
+    color: #644498;
+    width: 100px;
+    float: left;
+    cursor: pointer;
+}
+
+    .oredit img {
+        vertical-align: middle;
+        padding-bottom: 4px;
+    }
+
+.orbasic {
+    width: 170px;
+    float: left;
+}
+
+    .orbasic .ort {
+        font-weight: bold;
+        line-height: 40px;
+    }
+
+    .orbasic p {
+        margin: 0;
+        line-height: 20px;
+    }
