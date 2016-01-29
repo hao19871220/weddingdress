@@ -225,7 +225,7 @@ img {
 
 /*高端定制作品详情end*/
 
-/*订单管理*/
+/*订单管理star*/
 .orhead {
     width: 1110px;
     margin: 10px auto 38px auto;
@@ -454,3 +454,4 @@ img {
     margin:0;
     line-height:20px;
 }
+/*订单管理end*/
