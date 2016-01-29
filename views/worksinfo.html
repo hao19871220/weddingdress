@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>高端定制作品详情</title>
+    <link href="../lib/css/global.css" rel="stylesheet" />
+    <link href="../lib/css/worksinfo.css" rel="stylesheet" />
+    <link href="../lib/css/quanju.css" rel="stylesheet" />
+    <script src="../lib/js/jquery-1.9.1.min.js"></script>
+    <script src="../lib/js/jquery.SuperSlide.2.1.1.js"></script>
+    <!--[if lt IE 10]>
+    <script src="../lib/plugins/pie/PIE.js"></script>
+    <![endif]-->
+    <script>
+        $(function () {
+            window.onload = function () {
+                var $li = $('#tab li');
+                var $list = $('#content .list');
+
+                $li.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('current');
+                    $list.css('display', 'none');
+                    $list.eq($t).css('display', 'block');
+                })
+            }
+        });
+    </script>
+</head>
+<body>
+<img src="/lib/img/top.jpg" alt="" style="width:100%;height:80px;"/>
+    <header>
+        <div class="xn-light">
+            <div class="container">
+                <ul>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的收藏夹</a>|</li>
+                    <li><a href="#">会员俱乐部</a></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">手机版</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container xn-header">
+            <a href="index.html"><img src="../lib/img/logo.png" alt="" class="logo" style="border:0;" /></a>
+            <ul>
+                <li><a href="#">婚礼购物</a></li>
+                <li><a href="#">私人定制</a></li>
+                <li><a href="#">婚礼策划</a></li>
+                <li><a href="#">线下服务</a></li>
+                <li><a href="#">最美新娘</a></li>
+            </ul>
+            <div class="rside">
+                <div class="zp">
+                    <img src="../lib/img/prove.png" alt="" /> 100%正品
+                    <img src="../lib/img/num.png" alt="" /> 30万方实体城
+                </div>
+                <div class="new">
+                    <div class="new-num">1</div>
+                </div><img src="../lib/img/news.png" alt="" />
+            </div>
+        </div>
+    </header>
+    <div class="wk-head">
+        <div class="wk-title">VERSACE 高级定制草图</div>
+        <div class="wk-nrong">
+            <p>
+                设计理念：花一样的裙摆，花一样的海洋，范思哲春季高级晚装高贵而奢华，流畅的线条，一场令人窒息的美人鱼聚会
+            </p>
+        </div>
+        <div class="wk-bg">
+            <div class="bgleft">19999起</div>
+            <div class="bgright">开始定制</div>
+        </div>
+    </div>
+    <div class="wk-photo">
+        <div id="play">
+            <ul class="img_ul">
+                <li style="display:block;"><a class="img_a"><img src="../lib/img/hcustom/th1.png"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th2.jpg"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th3.jpg"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th4.jpg"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th5.jpg"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th6.jpg"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th7.jpg"></a></li>
+            </ul>
+            <a href="javascript:void(0)" class="prev_a change_a" title="上一张"> <span></span></a>
+            <a href="javascript:void(0)" class="next_a change_a" title="下一张"> <span style="display: inline; "></span> </a>
+        </div>
+
+        <div class="img_hd">
+            <ul class=" clearfix">
+                <li><a class="img_a"><img src="../lib/img/hcustom/th1.png" onload="imgs_load(this)"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th2.jpg" onload="imgs_load(this)"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th3.jpg" onload="imgs_load(this)"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th4.jpg" onload="imgs_load(this)"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th5.jpg" onload="imgs_load(this)"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th6.jpg" onload="imgs_load(this)"></a></li>
+                <li><a class="img_a"><img src="../lib/img/hcustom/th7.jpg" onload="imgs_load(this)"></a></li>
+            </ul>
+            <a class="bottom_a prev_a" style="opacity: 0.7; "></a> <a class="bottom_a next_a" style="opacity: 0.7; "></a>
+        </div>
+    </div>
+    <!-- 详情begin -->
+    <div id="outer">
+        <div class="wk-long">
+            <ul id="tab">
+                <li class="current">设计理念</li>
+                <li>细节处理</li>
+                <li>工艺制作</li>
+                <li>我的制作</li>
+                <li>材质运作</li>
+                <li>流行元素</li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="list" style="display:block;">
+                <div class="wk-pic">
+                    <img src="../lib/img/hcustom/icon4.jpg" alt="" />
+                </div>
+              
+            </div>
+            <div class="list">
+                细节处理
+            </div>
+            <div class="list">
+                工艺制作
+            </div>
+            <div class="list">
+                我的制作
+            </div>
+            <div class="list">
+                材质运作
+            </div>
+            <div class="list">
+                流行元素
+            </div>
+        </div>
+    </div>
+    <!-- 详情end -->
+    <footer>
+        <div class="container xn-foot">
+            <div class="fleft">
+                <label>商品集合</label>
+                <p>婚纱 (1725)</p>
+                <p>礼服 (635)</p>
+                <p>男士 (2514)</p>
+                <p>配件 (76)</p>
+            </div>
+            <div class="fright">
+                <label>网站</label>
+                <p>服务条款</p>
+                <p>隐私政策</p>
+                <p>版权政策</p>
+                <p>宣传资料</p>
+                <p>支持</p>
+            </div>
+            <div class="fright">
+                <label>虎丘婚纱</label>
+                <p>关于我们</p>
+                <p>服务理念</p>
+                <p>职位</p>
+                <p>联系我们</p>
+            </div>
+            <div class="fright">
+                <label>关注我们</label>
+                <p>虎丘婚纱为爱服务-苏州</p>
+                <p>2015 © All rights reserved. 虎丘婚纱</p>
+                <img src="../lib/img/wx.png" style="padding-right:10px;" />
+                <img src="../lib/img/sina.png" />
+            </div>
+        </div>
+    </footer>
+    <script src="../lib/js/photo.js"></script>
+</body>
+</html>
