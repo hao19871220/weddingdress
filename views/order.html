@@ -14,7 +14,8 @@
             window.onload = function () {
                 var $li = $('#tab li');
                 var $list = $('#content .list');
-
+                var $orli = $('#or-tab li');
+                var $orlist = $('#or-content .or-list');
                 $li.click(function () {
                     var $this = $(this);
                     var $t = $this.index();
@@ -22,8 +23,17 @@
                     $this.addClass('current');
                     $list.css('display', 'none');
                     $list.eq($t).css('display', 'block');
-                })
+                });
+                $orli.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $orli.removeClass();
+                    $this.addClass('or-current');
+                    $orlist.css('display', 'none');
+                    $orlist.eq($t).css('display', 'block');
+                });
             }
+
         });
     </script>
 </head>
@@ -116,29 +126,34 @@
             </div>
             <div class="list" style="display:block;">
                 <div id="or-outer">
-                    <ul id="or-tab">
-                        <li>婚礼日记</li>
-                        <li>我的收藏</li>
-                        <li class="or-current">订单管理</li>
-                        <li>我的定制</li>
-                        <li>我的预约</li>
-                    </ul>
+                    <div class="or-ceng">
+                        <ul id="or-tab">
+                            <li class="or-current">所有订单</li>
+                            <li>代付款</li>
+                            <li>待发货</li>
+                            <li>待收货</li>
+                            <li>待评价</li>
+                        </ul>
+                        <div class="orserch">
+                            <input type="text"/>
+                            <div class="orbtn">搜索</div>
+                        </div>
+                    </div>
                     <div id="or-content">
-                        <div class="or-list">
-                            婚礼日记
-                        </div>
-                        <div class="or-list">
-                            我的收藏
-                        </div>
                         <div class="or-list" style="display:block;">
-
-                            dd
+                            所有订单
                         </div>
                         <div class="or-list">
-                            我的定制
+                            代付款
                         </div>
                         <div class="or-list">
-                            我的预约
+                            待发货
+                        </div>
+                        <div class="or-list">
+                            待收货
+                        </div>
+                        <div class="or-list">
+                            待评价
                         </div>
                     </div>
                 </div>

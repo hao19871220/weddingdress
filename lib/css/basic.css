@@ -79,7 +79,7 @@ img {
         padding: 0 20px;
         margin: 0 60px;
         font-size: 16px;
-        font-weight:bold;
+        font-weight: bold;
     }
 
         #tab li.current {
@@ -305,39 +305,69 @@ img {
         margin: 0;
         line-height: 20px;
     }
-    #or-outer {
-    width: 100%;
+
+#or-outer {
+    width: 1100px;
     margin: 20px auto;
 }
-
-
+.or-ceng {
+     width: 100%;
+     overflow:hidden;
+}
+.orserch {
+    width:290px;
+    float:right;
+    margin-top:5px;
+}
+.orserch input{
+    width:215px;
+    height:20px;
+    border:solid 2px #6f43be;
+    float:left;
+    padding:5px;
+    line-height:20px;
+}
+    .orserch .orbtn {
+    width:56px;
+    height:30px;
+    line-height:30px;
+    border:solid 2px #6f43be;
+    border-left:none;
+    float:left;
+    color:#6f43be;
+    text-align:center;
+    cursor:pointer;
+    }
 #or-tab {
-    width: 1100px;
-    margin: 0 auto;
+    width: 500px;
     overflow: hidden;
     zoom: 1;
     height: 50px;
+    float:left;
 }
 
     #or-tab li {
         float: left;
-        height: 50px;
+        height: 40px;
         cursor: pointer;
-        line-height: 50px;
-        padding: 0 20px;
-        margin: 0 60px;
-        font-size: 16px;
-        font-weight:bold;
+        line-height:40px;
+        padding: 0 10px;
+        margin: 0 10px;
+        font-size: 14px;
+        font-weight: bold;
     }
 
         #or-tab li.or-current {
-            height: 48px;
+            height: 38px;
+            color:#6f43be;
             border-bottom: solid 2px #6f43be;
         }
 
 #or-content {
     width: 1100px;
-    margin: 0 auto;
+    margin: 5px auto;
+    border-top:solid 1px #ddd;
+
 }
 
     #or-content .or-list {
