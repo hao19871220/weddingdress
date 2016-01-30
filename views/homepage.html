@@ -1,0 +1,381 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>个人主页</title>
+    <link href="../lib/css/global.css" rel="stylesheet" />
+    <link href="../lib/css/basic.css" rel="stylesheet" />
+   <!--<script src="../lib/js/jquery-1.9.1.min.js"></script>-->
+    <script src="../lib/js/jquery.min.js"></script>
+    <script src="../lib/js/jquery-ui-datepicker.min.js"></script>
+    <!--[if lt IE 10]>
+    <script src="../lib/plugins/pie/PIE.js"></script>
+    <![endif]-->
+    <script>
+        $(function () {
+            window.onload = function () {
+                var $li = $('#tab li');
+                var $list = $('#content .list');
+                var $orli = $('#or-tab li');
+                var $orlist = $('#or-content .or-list');
+                $li.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('current');
+                    $list.css('display', 'none');
+                    $list.eq($t).css('display', 'block');
+                });
+                $orli.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $orli.removeClass();
+                    $this.addClass('or-current');
+                    $orlist.css('display', 'none');
+                    $orlist.eq($t).css('display', 'block');
+                });
+            }
+
+        });
+    </script>
+</head>
+<body>
+    <img src="/lib/img/top.jpg" alt="" style="width:100%;height:80px;" />
+    <header>
+        <div class="xn-light">
+            <div class="container">
+                <ul>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的收藏夹</a>|</li>
+                    <li><a href="#">会员俱乐部</a></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">手机版</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container xn-header">
+            <a href="index.html"><img src="../lib/img/logo.png" alt="" class="logo" style="border:0;" /></a>
+            <ul>
+                <li><a href="#">婚礼购物</a></li>
+                <li><a href="#">私人定制</a></li>
+                <li><a href="#">婚礼策划</a></li>
+                <li><a href="#">线下服务</a></li>
+                <li><a href="#">最美新娘</a></li>
+            </ul>
+            <div class="rside">
+                <div class="zp">
+                    <img src="../lib/img/prove.png" alt="" /> 100%正品
+                    <img src="../lib/img/num.png" alt="" /> 30万方实体城
+                </div>
+                <div class="new">
+                    <div class="new-num">1</div>
+                </div><img src="../lib/img/news.png" alt="" />
+            </div>
+        </div>
+    </header>
+    <div class="home-head">
+        <div class="home-info">
+            <div class="hleft">
+                <div class="portrait" style="margin:80px 0 0 70px;">
+                    <img src="/lib/img/or.png" alt="" class="onpic" />
+                </div>
+                <div class="hname">张虾条</div>
+                <p>个人的描述</p>
+                <div class="hgrade">
+                    <div class="hline"></div>
+                    <ul>
+                        <li></li>
+                        <li class="hshow">V2</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <p><a style="color: #644498; cursor: pointer;">完善资料提升等级</a></p>
+                <p style="padding-top:25px; cursor:pointer;"><img src="/lib/img/edit.png" alt="" /> <a style="color: #644498;padding-left:8px;">编辑</a></p>
+            </div>
+            <div class="hright">
+                <div class="ort">基本信息</div>
+                <p>身高：160cm</p>
+                <p>体重：68kg</p>
+                <p>性别：女</p>
+                <div class="ort">量体信息</div>
+                <p>脖长：21cm</p>
+                <p>肩宽：34cm</p>
+                <p>臂长：56cm</p>
+                <p>肩到胸高点：32cm</p>
+                <p>胸围：160 cm</p>
+                <p>BP肩距（乳点肩距）：20cm</p>
+                <p>腰围：160 cm</p>
+                <p>臀围：160 cm</p>
+            </div>
+        </div>
+        <img src="../lib/img/hide.jpg" class="left" style="cursor:pointer;"/>
+        <div class="home-buy">
+            <div class="hpic"><img src="../lib/img/home1.jpg" /></div>
+            <p>您还没买婚纱</p>
+            <div class="hcm">购买婚纱</div>
+            <div class="himg">
+                <img src="../lib/img/home2.jpg" />
+                <img src="../lib/img/home3.jpg" />
+            </div>
+        </div>
+        <div class="home-calendar">
+            <div id="calendar"></div>
+            <script>
+                $('#calendar').datepicker({
+                    inline: true,
+                    firstDay: 1,
+                    showOtherMonths: true,
+                    dayNamesMin: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+                });
+            </script>
+            <div class="home-distance">距离婚礼还有<span>122天</span></div>
+        </div>
+    </div>
+    <div id="outer">
+        <div class="wk-long">
+            <ul id="tab">
+                <li class="current">婚礼日记</li>
+                <li>我的收藏</li>
+                <li>订单管理</li>
+                <li>我的定制</li>
+                <li>我的预约</li>
+            </ul>
+        </div>
+        <div id="content">
+            <div class="list" style="display:block;">
+          <div class="home-main">
+              <div class="ht">我的婚礼进度</div>
+              <div class="hcs">
+                  <div class="hcs-list">
+                      <div class="hcs-title">了解事宜</div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">本地习俗<img src="../lib/img/ask.png" /></div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">准备事宜</div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">选定时间</div>
+                      </div>
+                  </div>
+                  <div class="hcs-list">
+                      <div class="hcs-title">预算规划</div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">酒水糖果伴手礼</div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">酒席酒店<img src="../lib/img/ask.png" /></div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">首饰珠宝</div>
+                      </div>
+                  </div>
+                  <div class="hcs-list">
+                      <div class="hcs-title">挑选婚纱</div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">新娘婚纱<img src="../lib/img/ask.png" /></div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">新郎西服</div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">伴娘服</div>
+                      </div>
+                  </div>
+                  <div class="hcs-list">
+                      <div class="hcs-title">婚纱摄影</div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">婚纱照<img src="../lib/img/ask.png" /></div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">外景</div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">取件</div>
+                      </div>
+                  </div>
+                  <div class="hcs-list">
+                      <div class="hcs-title">举办婚礼</div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">婚礼策划<img src="../lib/img/ask.png" /></div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">司仪</div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">酒店</div>
+                      </div>
+                  </div>
+                  <div class="hcs-list" style="border:0;">
+                      <div class="hcs-title">蜜月旅行</div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">行程</div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">时间计划</div>
+                      </div>
+                      <div class="hcs-check">
+                          <input type="checkbox" /><div class="ckt">蜜月旅行<img src="../lib/img/ask.png" /></div>
+                      </div>
+                  </div>
+                  <div class="hcs-list" style="border:0; text-align:center;">
+                      <img src="../lib/img/add.jpg" style="cursor:pointer;"/>
+                  </div>
+              </div>
+              <div class="ht">我的结婚影集</div>
+          </div>
+            </div>
+            <div class="list">
+                我的收藏
+            </div>
+            <div class="list">
+                <div id="or-outer">
+                    <div class="or-ceng">
+                        <ul id="or-tab">
+                            <li class="or-current">所有订单</li>
+                            <li>代付款</li>
+                            <li>待发货</li>
+                            <li>待收货</li>
+                            <li>待评价</li>
+                        </ul>
+                        <div class="orserch">
+                            <input type="text" />
+                            <div class="orbtn">搜索</div>
+                        </div>
+                    </div>
+                    <div id="or-content">
+                        <div class="or-list" style="display:block;">
+                            <div class="or-main">
+                                <div class="or-title">
+                                    <div class="orbaby">宝贝</div>
+                                    <div class="orunit">单价（元）</div>
+                                    <div class="ornum">数量</div>
+                                    <div class="ormany">实付款（元）</div>
+                                    <div class="ortype">交易状态</div>
+                                    <div class="ormake">交易操作</div>
+                                </div>
+                                <div class="orui">
+                                    <div class="ortop">
+                                        <span class="ortime">2015-12-24</span>
+                                        <span class="ordan">订单号： 1499865295603856</span>
+                                        <div class="orservice"><img src="../lib/img/nw.png" />客服</div>
+                                    </div>
+                                    <div class="orinfo">
+                                        <div class="orbaby"><img src="../lib/img/dd.jpg" /></div>
+                                        <div class="orunit">3856.00</div>
+                                        <div class="ornum">1</div>
+                                        <div class="ormany">
+                                            <div class="orcont">
+                                                <p>3550.00</p>
+                                                <p>(含运费：15.00)</p>
+                                            </div>
+                                        </div>
+                                        <div class="ortype">
+                                            <div class="orcont">
+                                                <p>交易成功</p>
+                                                <p>订单成功</p>
+                                            </div>
+                                        </div>
+                                        <div class="ormake">
+                                            <div class="orcont">
+                                                <p><a style="text-decoration: underline; color: #644498;cursor:pointer;">评价</a></p>
+                                                <p style="cursor:pointer;">再次购买</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orui">
+                                    <div class="ortop">
+                                        <span class="ortime">2015-12-24</span>
+                                        <span class="ordan">订单号： 1499865295603856</span>
+                                        <div class="orservice"><img src="../lib/img/nw.png" />客服</div>
+                                    </div>
+                                    <div class="orinfo">
+                                        <div class="orbaby"><img src="../lib/img/dd.jpg" /></div>
+                                        <div class="orunit">3856.00</div>
+                                        <div class="ornum">1</div>
+                                        <div class="ormany">
+                                            <div class="orcont">
+                                                <p>3550.00</p>
+                                                <p>(含运费：15.00)</p>
+                                            </div>
+                                        </div>
+                                        <div class="ortype">
+                                            <div class="orcont">
+                                                <p>交易成功</p>
+                                                <p>订单成功</p>
+                                            </div>
+                                        </div>
+                                        <div class="ormake">
+                                            <div class="orcont">
+                                                <p><a style="text-decoration: underline; color: #644498;cursor:pointer;">评价</a></p>
+                                                <p style="cursor:pointer;">再次购买</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="or-list">
+                            代付款
+                        </div>
+                        <div class="or-list">
+                            待发货
+                        </div>
+                        <div class="or-list">
+                            待收货
+                        </div>
+                        <div class="or-list">
+                            待评价
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="list">
+                我的定制
+            </div>
+            <div class="list">
+                我的预约
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container xn-foot">
+            <div class="fleft">
+                <label>商品集合</label>
+                <p>婚纱 (1725)</p>
+                <p>礼服 (635)</p>
+                <p>男士 (2514)</p>
+                <p>配件 (76)</p>
+            </div>
+            <div class="fright">
+                <label>网站</label>
+                <p>服务条款</p>
+                <p>隐私政策</p>
+                <p>版权政策</p>
+                <p>宣传资料</p>
+                <p>支持</p>
+            </div>
+            <div class="fright">
+                <label>虎丘婚纱</label>
+                <p>关于我们</p>
+                <p>服务理念</p>
+                <p>职位</p>
+                <p>联系我们</p>
+            </div>
+            <div class="fright">
+                <label>关注我们</label>
+                <p>虎丘婚纱为爱服务-苏州</p>
+                <p>2015 © All rights reserved. 虎丘婚纱</p>
+                <img src="../lib/img/wx.png" style="padding-right:10px;" />
+                <img src="../lib/img/sina.png" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

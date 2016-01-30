@@ -310,47 +310,52 @@ img {
     width: 1100px;
     margin: 20px auto;
 }
+
 .or-ceng {
-     width: 100%;
-     overflow:hidden;
+    width: 100%;
+    overflow: hidden;
 }
+
 .orserch {
-    width:290px;
-    float:right;
-    margin-top:5px;
+    width: 290px;
+    float: right;
+    margin-top: 5px;
 }
-.orserch input{
-    width:215px;
-    height:20px;
-    border:solid 2px #6f43be;
-    float:left;
-    padding:5px;
-    line-height:20px;
-}
-    .orserch .orbtn {
-    width:56px;
-    height:30px;
-    line-height:30px;
-    border:solid 2px #6f43be;
-    border-left:none;
-    float:left;
-    color:#6f43be;
-    text-align:center;
-    cursor:pointer;
+
+    .orserch input {
+        width: 215px;
+        height: 20px;
+        border: solid 2px #6f43be;
+        float: left;
+        padding: 5px;
+        line-height: 20px;
     }
+
+    .orserch .orbtn {
+        width: 56px;
+        height: 30px;
+        line-height: 30px;
+        border: solid 2px #6f43be;
+        border-left: none;
+        float: left;
+        color: #6f43be;
+        text-align: center;
+        cursor: pointer;
+    }
+
 #or-tab {
     width: 500px;
     overflow: hidden;
     zoom: 1;
     height: 50px;
-    float:left;
+    float: left;
 }
 
     #or-tab li {
         float: left;
         height: 40px;
         cursor: pointer;
-        line-height:40px;
+        line-height: 40px;
         padding: 0 10px;
         margin: 0 10px;
         font-size: 14px;
@@ -359,15 +364,14 @@ img {
 
         #or-tab li.or-current {
             height: 38px;
-            color:#6f43be;
+            color: #6f43be;
             border-bottom: solid 2px #6f43be;
         }
 
 #or-content {
     width: 1100px;
     margin: 5px auto;
-    border-top:solid 1px #ddd;
-
+    border-top: solid 1px #ddd;
 }
 
     #or-content .or-list {
@@ -375,83 +379,470 @@ img {
         display: none;
         padding: 10px 5px;
     }
+
 .or-main {
-    width:100%;
-    overflow:hidden;
+    width: 100%;
+    overflow: hidden;
 }
+
 .or-title {
-    width:100%;
-    height:40px;
-    line-height:40px;
-    font-weight:bold;
-     text-align:center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    text-align: center;
 }
+
 .orbaby {
-    width:320px;
-    margin-left:40px;
-    float:left;
-     text-align:left;
+    width: 320px;
+    margin-left: 40px;
+    float: left;
+    text-align: left;
 }
+
 .orunit {
-    width:130px;
-    float:left;
-   
+    width: 130px;
+    float: left;
 }
+
 .ornum {
-    width:90px;
-    float:left;
+    width: 90px;
+    float: left;
 }
+
 .ormany {
-     width:180px;
-    float:left;
+    width: 180px;
+    float: left;
 }
+
 .ortype {
-     width:130px;
-    float:left;
+    width: 130px;
+    float: left;
 }
+
 .ormake {
-    width:180px;
-    float:left;
+    width: 180px;
+    float: left;
 }
+
 .orui {
-    width:100%;
-    margin-bottom:20px;
-    float:left;
+    width: 100%;
+    margin-bottom: 20px;
+    float: left;
 }
-.orui .ortop{
-    width:100%;
-    height:30px;
-    background:#644498;
-    line-height:30px;
-    color:#fff;
-    position:relative;
-}
-.orui .orinfo {
-    height:85px;
-    line-height:85px;
-    border:solid 1px #6f43be;
-     text-align:center;
-}
-.ortime {
-    padding:0 20px;
-}
-.orservice {
-    position:absolute;
-    width:70px;
-    height:30px;
-    line-height:30px;
-    right:0;
-    top:0;
-    cursor:pointer;
-}
-    .orservice img {
-    padding-right:8px;
+
+    .orui .ortop {
+        width: 100%;
+        height: 30px;
+        background: #644498;
+        line-height: 30px;
+        color: #fff;
+        position: relative;
     }
+
+    .orui .orinfo {
+        height: 85px;
+        line-height: 85px;
+        border: solid 1px #6f43be;
+        text-align: center;
+    }
+
+.ortime {
+    padding: 0 20px;
+}
+
+.orservice {
+    position: absolute;
+    width: 70px;
+    height: 30px;
+    line-height: 30px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+    .orservice img {
+        padding-right: 8px;
+    }
+
 .orcont {
-    padding-top:22px;
+    padding-top: 22px;
 }
-.orcont p{
-    margin:0;
-    line-height:20px;
-}
+
+    .orcont p {
+        margin: 0;
+        line-height: 20px;
+    }
 /*订单管理end*/
+
+/*个人主页star*/
+.home-head {
+    width: 1300px;
+    margin: 0 auto;
+    height: 465px;
+    background: #f8f8f8;
+}
+
+.home-info {
+    width: 570px;
+    height: 465px;
+    background: #fff;
+    float: left;
+}
+
+    .home-info .hleft {
+        width: 300px;
+        float: left;
+    }
+
+        .home-info .hleft p {
+            text-align: center;
+            width: 100%;
+            float: left;
+            margin: 0;
+        }
+
+.home-buy {
+    width: 350px;
+    float: left;
+}
+
+.home-calendar {
+    width: 340px;
+    float: left;
+    height: 435px;
+    background: #fff;
+    margin: 15px 0;
+    position: relative;
+}
+
+.hname {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    float: left;
+    width: 100%;
+    line-height: 50px;
+}
+
+.hgrade {
+    width: 280px;
+    height: 24px;
+    position: relative;
+    float: left;
+    margin: 10px;
+}
+
+    .hgrade ul {
+        width: 100%;
+        height: 24px;
+        position: absolute;
+        z-index: 2;
+    }
+
+        .hgrade ul li {
+            width: 18px;
+            height: 18px;
+            background: #bfbfbf;
+            margin: 3px 19px;
+            border-radius: 50%;
+            behavior: url(/lib/plugins/pie/PIE.htc);
+            float: left;
+            line-height: 18px;
+        }
+
+    .hgrade .hshow {
+        width: 24px;
+        height: 24px;
+        background: #644498;
+        line-height: 24px;
+        text-align: center;
+        margin: 0 16px;
+        color: #fff;
+    }
+
+.hline {
+    width: 240px;
+    height: 6px;
+    background: #ebebeb;
+    position: absolute;
+    margin: 9px 20px;
+}
+
+.hright {
+    width: 210px;
+    overflow: hidden;
+    float: left;
+    padding-left: 60px;
+}
+
+    .hright .ort {
+        font-weight: bold;
+        padding-top: 60px;
+        line-height: 24px;
+    }
+
+    .hright p {
+        margin: 0;
+        line-height: 20px;
+    }
+
+.hpic {
+    width: 100%;
+    text-align: center;
+    padding: 34px 0;
+}
+
+.home-buy p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    color: #6f43be;
+    margin: 0;
+}
+
+.home-buy .hcm {
+    width: 146px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background: #6f43be;
+    border-radius: 15px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+    margin: 20px auto 70px auto;
+}
+
+.home-buy .himg {
+    width: 340px;
+    margin: 0 auto;
+}
+
+    .home-buy .himg img {
+        width: 165px;
+        height: 130px;
+        padding: 0 2px;
+        float: left;
+    }
+/*日历*/
+/* Reset */
+.ui-datepicker,
+.ui-datepicker table,
+.ui-datepicker tr,
+.ui-datepicker td,
+.ui-datepicker th {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-spacing: 0;
+}
+
+/* Calendar Wrapper */
+.ui-datepicker {
+    display: none;
+    width: 294px;
+    padding: 20px;
+    cursor: default;
+    text-transform: uppercase;
+    font-family: Tahoma;
+    font-size: 14px;
+}
+
+/* Calendar Header */
+.ui-datepicker-header {
+    position: relative;
+    padding-bottom: 30px;
+    line-height: 24px;
+    /*border-bottom: 1px solid #d6d6d6;*/
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Month */
+.ui-datepicker-month {
+    position: relative;
+    /*padding-right: 15px;*/
+    color: #644498;
+}
+
+    .ui-datepicker-month:before {
+        /*display: block;
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 5px;
+        height: 5px;
+        content: '';
+        background: #a5cd4e;
+        background: -moz-linear-gradient(top, #a5cd4e 0%, #6b8f1a 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a5cd4e), color-stop(100%,#6b8f1a));
+        background: -webkit-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+        background: -o-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+        background: -ms-linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+        background: linear-gradient(top, #a5cd4e 0%,#6b8f1a 100%);
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;*/
+    }
+
+/* Year */
+.ui-datepicker-year {
+    padding-left: 8px;
+    color: #644498;
+}
+
+/* Prev Next Month */
+.ui-datepicker-prev,
+.ui-datepicker-next {
+    position: absolute;
+    top: -2px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.ui-datepicker-prev {
+    left: 10px;
+    padding-left: 0;
+}
+
+.ui-datepicker-next {
+    right: 10px;
+    padding-right: 0;
+}
+
+    .ui-datepicker-prev span,
+    .ui-datepicker-next span {
+        display: block;
+        width: 10px;
+        height: 19px;
+        text-indent: -9999px;
+        /*background-image: url(img/arrows.png);*/
+    }
+
+.ui-datepicker-prev span {
+    /*background-position: 0px 0px;*/
+    background: url(../img/left.png) no-repeat;
+}
+
+.ui-datepicker-next span {
+    /*background-position: -5px 0px;*/
+    background: url(../img/right.png) no-repeat;
+}
+
+.ui-datepicker-prev-hover span {
+    /*background-position: 0px -10px;*/
+    background: url(../img/left.png) no-repeat;
+}
+
+.ui-datepicker-next-hover span {
+    /*background-position: -5px -10px;*/
+    background: url(../img/right.png) no-repeat;
+}
+
+/* Calendar "Days" */
+.ui-datepicker-calendar th {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: normal;
+    color: #505050;
+}
+
+.ui-datepicker-calendar td {
+    padding: 5px 7px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.ui-datepicker-calendar .ui-state-default {
+    display: block;
+    width: 26px;
+    outline: none;
+    text-decoration: none;
+    color: #505050;
+    border: 1px solid transparent;
+}
+
+/* Day Active State*/
+.ui-datepicker-calendar .ui-state-active {
+    color: #fff;
+    background: #6f43be;
+    border-radius: 50%;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+
+/* Other Months Days*/
+.ui-datepicker-other-month .ui-state-default {
+    color: #a8a8a8;
+}
+/*日历结束*/
+.home-distance {
+    width: 330px;
+    height: 60px;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
+    line-height: 60px;
+    text-align: center;
+    background: #6f43be;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 5px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+
+    .home-distance span {
+        font-size: 30px;
+    }
+
+.home-main {
+    width: 100%;
+    overflow: hidden;
+}
+
+    .home-main .ht {
+        font-weight: bold;
+        font-size: 14px;
+        padding: 80px 0 20px 0;
+    }
+
+    .home-main .hcs {
+        width: 100%;
+        height: 130px;
+    }
+
+    .home-main .hcs-list {
+        width: 170px;
+        height: 130px;
+        border-right: solid 1px #ddd;
+        float: left;
+    }
+
+    .home-main .hcs-title {
+        font-weight: bold;
+        text-align:center;
+        padding-bottom:15px;
+    }
+  .home-main .hcs-check {
+      padding-left:40px;
+      line-height:24px;
+      height:24px;
+}
+    .home-main .hcs-check input {
+    width:15px;
+    height:15px;
+    margin-top:5px;
+    float:left;
+    }
+    .home-main .hcs-check .ckt {
+    width:110px;
+    float:right;
+    }
+        .home-main .hcs-check .ckt img{
+  padding-left:8px;
+    }
+/*个人主页end*/
