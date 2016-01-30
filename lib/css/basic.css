@@ -1036,4 +1036,46 @@ img {
 .myadd {
     cursor:pointer;
 }
+.confirm {
+    width: 110px;
+    height: 30px;
+    text-align:center;
+    line-height:30px;
+    background: #6f43be;
+    color: #fff;
+    border-radius: 15px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+.confp {
+    padding-left:150px;
+}
+    .confp p {
+    color:#6f43bd;
+    font-size:18px;
+    }
+.deposit {
+    width:300px;
+    padding-left:200px;
+}
+    .deposit input {
+    width:85px;
+    height:24px;
+    line-height:24px;
+    padding:5px;
+    border:solid 1px #000;
+    background:#ebebeb;
+    color:#6f43be;
+    }
+.conversion {
+    width:257px;
+    margin:20px auto;
+    font-size:18px;
+}
+    .conversion span {
+    color:#6f43be;
+    }
+        .deposit p {
+   font-size:18px;
+   text-align:center;
+    }
 /*个人主页end*/
