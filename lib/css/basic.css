@@ -1147,3 +1147,45 @@ img {
     line-height:24px;
     color:#333;
 }
+/*活动报名*/
+#acouter {
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+#actab {
+    width: 290px;
+    overflow: hidden;
+    zoom: 1;
+    /*border-bottom: 1px solid #ddd;*/
+    margin: 10px auto 0 auto;
+}
+
+    #actab li {
+        float: left;
+        height: 40px;
+        cursor: pointer;
+        line-height: 40px;
+        padding: 0 20px;
+        font-size: 14px;
+        font-weight: bold;
+        margin: 0 20px;
+    }
+
+        #actab li.accurrent {
+            border-bottom: 2px solid #644499;
+        }
+
+
+#accontent {
+    width: 100%;
+    margin: 0 auto;
+    border-top: solid 1px #ddd;
+}
+
+    #accontent .aclist {
+        padding:10px;
+        line-height: 25px;
+        display: none;
+    }

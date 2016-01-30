@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>最美新娘 故事详情页</title>
+    <link href="../lib/css/global.css" rel="stylesheet" />
+    <link href="../lib/css/basic.css" rel="stylesheet" />
+    <script src="../lib/js/jquery-1.9.1.min.js"></script>
+    <script src="../lib/js/imgroll.js"></script>
+    <!--[if lt IE 10]>
+    <script src="../lib/plugins/pie/PIE.js"></script>
+    <![endif]-->
+    <script>
+        $(function () {
+            window.onload = function () {
+                var $li = $('#actab li');
+                var $ul = $('#accontent .aclist');
+
+                $li.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $li.removeClass();
+                    $this.addClass('accurrent');
+                    $ul.css('display', 'none');
+                    $ul.eq($t).css('display', 'block');
+                })
+            }
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div class="xn-light">
+            <div class="container">
+                <ul>
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                    <li><a href="#">我的订单</a></li>
+                    <li><a href="#">我的收藏夹</a>|</li>
+                    <li><a href="#">会员俱乐部</a></li>
+                    <li><a href="#">客户服务</a></li>
+                    <li><a href="#">手机版</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container xn-header">
+            <a href="index.html"><img src="../lib/img/logo.png" alt="" class="logo" style="border:0;" /></a>
+            <ul>
+                <li><a href="#">婚礼购物</a></li>
+                <li><a href="#">私人定制</a></li>
+                <li><a href="#">婚礼策划</a></li>
+                <li><a href="#">线下服务</a></li>
+                <li><a href="#">最美新娘</a></li>
+            </ul>
+            <div class="rside">
+                <div class="zp">
+                    <img src="../lib/img/prove.png" alt="" /> 100%正品
+                    <img src="../lib/img/num.png" alt="" /> 30万方实体城
+                </div>
+                <div class="new">
+                    <div class="new-num">1</div>
+                </div><img src="../lib/img/news.png" alt="" />
+            </div>
+        </div>
+    </header>
+    <img src="../lib/img/ban.jpg" style="width:100%;cursor:pointer;" />
+    <div id="acouter">
+        <ul id="actab">
+            <li class="accurrent">活动详情</li>
+            <li>活动交流</li>           
+        </ul>
+        <!--<div class="line"></div>-->
+        <div id="accontent">
+            <div class="aclist" style="display:block;">
+              <div class="container">活动详情</div>  
+            </div>
+            <div class="aclist">
+                <div class="container">活动交流</div>  
+            </div>
+        </div>
+    </div>
+    <div class="gline"></div>
+    <div class="box">
+
+        <span class="prev"></span>
+
+        <dl id="roll">
+
+            <dd><img src="../lib/img/bfbrode/f01.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f02.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f03.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f04.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f05.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f06.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f01.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f02.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f03.jpg" /></dd>
+
+            <dd><img src="../lib/img/bfbrode/f04.jpg" /></dd>
+
+        </dl>
+
+        <span class="next"></span>
+
+    </div>
+    <footer>
+        <div class="container xn-foot">
+            <div class="fleft">
+                <label>商品集合</label>
+                <p>婚纱 (1725)</p>
+                <p>礼服 (635)</p>
+                <p>男士 (2514)</p>
+                <p>配件 (76)</p>
+            </div>
+            <div class="fright">
+                <label>网站</label>
+                <p>服务条款</p>
+                <p>隐私政策</p>
+                <p>版权政策</p>
+                <p>宣传资料</p>
+                <p>支持</p>
+            </div>
+            <div class="fright">
+                <label>虎丘婚纱</label>
+                <p>关于我们</p>
+                <p>服务理念</p>
+                <p>职位</p>
+                <p>联系我们</p>
+            </div>
+            <div class="fright">
+                <label>关注我们</label>
+                <p>虎丘婚纱为爱服务-苏州</p>
+                <p>2015 © All rights reserved. 虎丘婚纱</p>
+                <img src="../lib/img/wx.png" style="padding-right:10px;" />
+                <img src="../lib/img/sina.png" />
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

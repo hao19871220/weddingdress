@@ -183,5 +183,22 @@ body {
         vertical-align: middle;
         padding-bottom: 2px;
     }
+.youlove {
+    width: 1200px;
+    margin: 60px auto 20px auto;
+}
 
+.guess {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #644499;
+}
+
+.find {
+    text-align: center;
+    color: #ccc;
+    padding-top: 5px;
+    padding-bottom:40px;
+}
 
