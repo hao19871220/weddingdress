@@ -824,25 +824,78 @@ img {
 
     .home-main .hcs-title {
         font-weight: bold;
-        text-align:center;
-        padding-bottom:15px;
+        text-align: center;
+        padding-bottom: 15px;
     }
-  .home-main .hcs-check {
-      padding-left:40px;
-      line-height:24px;
-      height:24px;
+
+    .home-main .hcs-check {
+        padding-left: 40px;
+        line-height: 24px;
+        height: 24px;
+    }
+
+        .home-main .hcs-check input {
+            width: 15px;
+            height: 15px;
+            margin-top: 5px;
+            float: left;
+        }
+
+        .home-main .hcs-check .ckt {
+            width: 110px;
+            float: right;
+        }
+
+            .home-main .hcs-check .ckt img {
+                padding-left: 8px;
+            }
+
+/*时间轴*/
+.timeinfo {
+    width: 100%;
 }
-    .home-main .hcs-check input {
-    width:15px;
-    height:15px;
-    margin-top:5px;
-    float:left;
+
+    .timeinfo ul {
+        margin-left: 70px;
+        border-left: solid 1px #ddd;
     }
-    .home-main .hcs-check .ckt {
-    width:110px;
-    float:right;
+
+        .timeinfo ul li {
+            position: relative;
+            padding: 0 30px;
+            margin-bottom: 30px;
+        }
+
+    .timeinfo .time-title {
+        line-height: 24px;
+        width: 100%;
+        font-weight: bold;
+        font-size: 18px;
     }
-        .home-main .hcs-check .ckt img{
-  padding-left:8px;
+
+    .timeinfo .dian {
+        width: 22px;
+        height: 22px;
+        background: #bfbfbf;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: -11px;
+    }
+
+    .timeinfo .create {
+        text-align:center;
+        color:#fff;
+        font-size:24px;
+        line-height:22px;
+        background:#6f43be;
+        cursor:pointer;
+    }
+        .timeinfo .crt {
+        color:#6f43be;
+        cursor:pointer;
+    }
+    .timeinfo .time-content {
+    padding:20px 0;
     }
 /*个人主页end*/
