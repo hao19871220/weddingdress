@@ -1079,3 +1079,71 @@ img {
    text-align:center;
     }
 /*个人主页end*/
+/*故事详情页*/
+.youlove {
+    width: 1200px;
+    margin: 60px auto 20px auto;
+}
+
+.guess {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #644499;
+}
+
+.find {
+    text-align: center;
+    color: #ccc;
+    padding-top: 5px;
+    padding-bottom:40px;
+}
+.sy-top {
+    height:55px; 
+    padding-top:30px;
+}
+.sy-title {
+    width:1000px;
+    float:left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size:50px;
+}
+.sy-throw {
+    width:120px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    font-size:14px;
+    color:#644499;
+    border-radius:20px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+    float:right;
+    border:solid 1px #6f43be;
+    cursor:pointer;
+    margin-top:5px;
+}
+.sy-cont {
+    width:100%;
+    height:46px;
+    line-height:46px;
+    float:left;
+}
+.sy-author {
+    width:180px;
+    height:42px;
+    line-height:42px;
+    color:#fff;
+    font-size:24px;
+    text-align:center;
+    background:#6f43be;
+    border-radius:21px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+.sy-main{
+    width:100%;
+    font-size:18px;
+    line-height:24px;
+    color:#333;
+}
