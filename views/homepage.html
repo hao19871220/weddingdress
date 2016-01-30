@@ -34,6 +34,19 @@
                     $orlist.css('display', 'none');
                     $orlist.eq($t).css('display', 'block');
                 });
+                var $myli = $('#mytab li');
+                var $mylist = $('#mycontent .mylist');
+                $myli.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    var $rond = $(this).find('.rond');
+                    $myli.removeClass();
+                    $this.addClass('mycurrent');
+                    $('.rond').removeClass('shi');
+                    $rond.addClass('shi');
+                    $mylist.css('display', 'none');
+                    $mylist.eq($t).css('display', 'block');
+                })
             }
 
         });
@@ -367,7 +380,129 @@
 
             </div>
             <div class="list">
-                我的定制
+                <div class="container info-top">
+                    <div class="info-title">定制订单01：VERSE高级婚纱</div>
+                    <div class="info-bg">联系设计师</div>
+                    <div class="info-bg">联系客服</div>
+                </div>
+                <div id="myouter">
+                    <ul id="mytab">
+                        <li class="mycurrent">
+                            <div class="myline" style="width:86px;right:0;"></div>
+                            <div class="myyuan"><div class="rond shi"></div></div>
+                            <p>我的定制需求</p>
+                        </li>
+                        <li>
+                            <div class="myline"></div>
+                            <div class="myyuan"><div class="rond"></div></div>
+                            <p>确认价格</p>
+                        </li>
+                        <li>
+                            <div class="myline"></div>
+                            <div class="myyuan"><div class="rond"></div></div>
+                            <p>支付定金</p>
+                        </li>
+                        <li>
+                            <div class="myline"></div>
+                            <div class="myyuan"><div class="rond"></div></div>
+                            <p>设计沟通</p>
+                        </li>
+                        <li>
+                            <div class="myline"></div>
+                            <div class="myyuan"><div class="rond"></div></div>
+                            <p>设计定稿</p>
+                        </li>
+                        <li>
+                            <div class="myline"></div>
+                            <div class="myyuan"><div class="rond"></div></div>
+                            <p>支付余款</p>
+                        </li>
+                        <li>
+                            <div class="myline"></div>
+                            <div class="myyuan"><div class="rond"></div></div>
+                            <p>制作</p>
+                        </li>
+                        <li>
+                            <div class="myline" style="width:86px;left:0;"></div>
+                            <div class="myyuan"><div class="rond"></div></div>
+                            <p>确认收货</p>
+                        </li>
+                    </ul>
+                    <div id="mycontent">
+                        <div class="mylist" style="display:block;">
+                            <div class="info-list">
+                                <div class="if-left">
+                                    我的需求
+                                </div>
+                                <div class="if-right">
+                                    <p>我的腰比较细，这个做的时候可以在我的腰上加上丝带，走起路来会摆的那种，上身胸部的位置可以垫高一点。</p>
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div class="if-left">
+                                    个人信息
+                                </div>
+                                <div class="if-right">
+                                    <p>脖长：21cm</p>
+                                    <p>肩宽：34cm</p>
+                                    <p>臂长：56cm</p>
+                                    <p>肩到胸高点：32cm</p>
+                                    <p>胸围：160 cm</p>
+                                    <p>BP肩距（乳点肩距）：20cm</p>
+                                    <p>腰围：160 cm</p>
+                                    <p>臀围：160 cm</p>
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div class="if-left">
+                                    形象照片
+                                </div>
+                                <div class="if-right">
+                                    <div class="if-pic">
+                                        <img src="../lib/img/hcustom/pic.png" />
+                                    </div>
+                                    <div class="if-pic add">
+                                        <img src="../lib/img/hcustom/myadd.png" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-list">
+                                <div class="if-left">
+                                    参考照片
+                                </div>
+                                <div class="if-right">
+                                    <div class="if-pic">
+                                        <img src="../lib/img/hcustom/pic.png" />
+                                    </div>
+                                    <div class="if-pic myadd">
+                                        <img src="../lib/img/hcustom/add.png" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mylist">
+                            确认价格
+                        </div>
+                        <div class="mylist">
+                            支付定金
+                        </div>
+                        <div class="mylist">
+                            设计沟通
+                        </div>
+                        <div class="mylist">
+                            设计定稿
+                        </div>
+                        <div class="mylist">
+                            支付余款
+                        </div>
+                        <div class="mylist">
+                            制作
+                        </div>
+                        <div class="mylist">
+                            确认收货
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="list">
                 我的预约

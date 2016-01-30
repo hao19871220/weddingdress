@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>高端定制</title>
     <link href="../lib/css/global.css" rel="stylesheet" />
-    <link href="../lib/css/hcustominfo.css" rel="stylesheet" />
+    <link href="../lib/css/basic.css" rel="stylesheet" />
     <script src="../lib/js/jquery-1.9.1.min.js"></script>
     <script src="../lib/js/imgroll.js"></script>
     <!--[if lt IE 10]>
@@ -13,18 +13,18 @@
     <script>
         $(function () {
             window.onload = function () {
-                var $li = $('#tab li');
-                var $list = $('#content .list'); 
-                $li.click(function () {
+                var $myli = $('#mytab li');
+                var $mylist = $('#mycontent .mylist');
+                $myli.click(function () {
                     var $this = $(this);
                     var $t = $this.index();
                     var $rond = $(this).find('.rond');
-                    $li.removeClass();
-                    $this.addClass('current');
+                    $myli.removeClass();
+                    $this.addClass('mycurrent');
                     $('.rond').removeClass('shi');
                     $rond.addClass('shi');
-                    $list.css('display', 'none');
-                    $list.eq($t).css('display', 'block');
+                    $mylist.css('display', 'none');
+                    $mylist.eq($t).css('display', 'block');
                 })
             }
         });
@@ -70,51 +70,51 @@
         <div class="info-bg">联系设计师</div>
         <div class="info-bg">联系客服</div>
     </div>
-    <div id="outer">
-        <ul id="tab">
-            <li class="current">
-                <div class="line" style="width:86px;right:0;"></div>
-                <div class="yuan"><div class="rond shi"></div></div>
+    <div id="myouter">
+        <ul id="mytab">
+            <li class="mycurrent">
+                <div class="myline" style="width:86px;right:0;"></div>
+                <div class="myyuan"><div class="rond shi"></div></div>
                 <p>我的定制需求</p>
             </li>
             <li>
-                <div class="line"></div>
-                <div class="yuan"><div class="rond"></div></div>
+                <div class="myline"></div>
+                <div class="myyuan"><div class="rond"></div></div>
                 <p>确认价格</p>
             </li>
             <li>
-                <div class="line"></div>
-                <div class="yuan"><div class="rond"></div></div>
+                <div class="myline"></div>
+                <div class="myyuan"><div class="rond"></div></div>
                 <p>支付定金</p>
             </li>
             <li>
-                <div class="line"></div>
-                <div class="yuan"><div class="rond"></div></div>
+                <div class="myline"></div>
+                <div class="myyuan"><div class="rond"></div></div>
                 <p>设计沟通</p>
             </li>
             <li>
-                <div class="line"></div>
-                <div class="yuan"><div class="rond"></div></div>
+                <div class="myline"></div>
+                <div class="myyuan"><div class="rond"></div></div>
                 <p>设计定稿</p>
             </li>
             <li>
-                <div class="line"></div>
-                <div class="yuan"><div class="rond"></div></div>
+                <div class="myline"></div>
+                <div class="myyuan"><div class="rond"></div></div>
                 <p>支付余款</p>
             </li>
             <li>
-                <div class="line"></div>
-                <div class="yuan"><div class="rond"></div></div>
+                <div class="myline"></div>
+                <div class="myyuan"><div class="rond"></div></div>
                 <p>制作</p>
             </li>
             <li>
-                <div class="line" style="width:86px;left:0;"></div>
-                <div class="yuan"><div class="rond"></div></div>
+                <div class="myline" style="width:86px;left:0;"></div>
+                <div class="myyuan"><div class="rond"></div></div>
                 <p>确认收货</p>
             </li>
         </ul>
-        <div id="content">
-            <div class="list" style="display:block;">
+        <div id="mycontent">
+            <div class="mylist" style="display:block;">
                 <div class="info-list">
                     <div class="if-left">
                         我的需求
@@ -143,47 +143,47 @@
                         形象照片
                     </div>
                     <div class="if-right">
-                      <div class="if-pic">
-                          <img src="../lib/img/hcustom/pic.png" />
-                      </div>
-                        <div class="if-pic add">
+                        <div class="if-pic">
+                            <img src="../lib/img/hcustom/pic.png" />
+                        </div>
+                        <div class="if-pic myadd">
                             <img src="../lib/img/hcustom/add.png" />
                         </div>
                     </div>
                 </div>
                 <div class="info-list">
                     <div class="if-left">
-                       参考照片
+                        参考照片
                     </div>
                     <div class="if-right">
                         <div class="if-pic">
                             <img src="../lib/img/hcustom/pic.png" />
                         </div>
-                        <div class="if-pic add">
+                        <div class="if-pic myadd">
                             <img src="../lib/img/hcustom/add.png" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="list">
+            <div class="mylist">
                 确认价格
             </div>
-            <div class="list">
+            <div class="mylist">
                 支付定金
             </div>
-            <div class="list">
+            <div class="mylist">
                 设计沟通
             </div>
-            <div class="list">
+            <div class="mylist">
                 设计定稿
             </div>
-            <div class="list">
+            <div class="mylist">
                 支付余款
             </div>
-            <div class="list">
+            <div class="mylist">
                 制作
             </div>
-            <div class="list">
+            <div class="mylist">
                 确认收货
             </div>
         </div>
