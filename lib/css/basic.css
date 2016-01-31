@@ -88,7 +88,6 @@ img {
         }
 
 #content {
-
 }
 
     #content .list {
@@ -800,7 +799,7 @@ img {
 
 .home-main {
     width: 1230px;
-    margin:0 auto;
+    margin: 0 auto;
     overflow: hidden;
 }
 
@@ -884,45 +883,50 @@ img {
     }
 
     .timeinfo .create {
-        text-align:center;
-        color:#fff;
-        font-size:24px;
-        line-height:22px;
-        background:#6f43be;
-        cursor:pointer;
+        text-align: center;
+        color: #fff;
+        font-size: 24px;
+        line-height: 22px;
+        background: #6f43be;
+        cursor: pointer;
     }
-        .timeinfo .crt {
-        color:#6f43be;
-        cursor:pointer;
+
+    .timeinfo .crt {
+        color: #6f43be;
+        cursor: pointer;
     }
+
     .timeinfo .time-content {
-    padding:20px 0;
+        padding: 20px 0;
     }
-    /*个人主页-我的定制*/
-    .info-top {
-    line-height:30px;
-    height:30px;
-    margin-top:55px;
-    margin-bottom:30px;
+/*个人主页-我的定制*/
+.info-top {
+    line-height: 30px;
+    height: 30px;
+    margin-top: 55px;
+    margin-bottom: 30px;
 }
+
 .info-title {
-    width:280px;
-    float:left;
-    font-size:16px;
-    text-align:center;
+    width: 280px;
+    float: left;
+    font-size: 16px;
+    text-align: center;
 }
+
 .info-bg {
-    width:100px;
-    height:30px;
-    background:#644498;
-    border-radius:15px;
+    width: 100px;
+    height: 30px;
+    background: #644498;
+    border-radius: 15px;
     behavior: url(/lib/plugins/pie/PIE.htc);
-    float:left;
-    margin-right:20px;
-    color:#fff;
-    text-align:center;
-    cursor:pointer;
+    float: left;
+    margin-right: 20px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
 }
+
 #myouter {
     width: 100%;
     margin: 50px auto;
@@ -931,8 +935,8 @@ img {
 #mytab {
     overflow: hidden;
     zoom: 1;
-    width:1392px;
-    margin:0 auto;
+    width: 1392px;
+    margin: 0 auto;
     /*background: #000;*/
 }
 
@@ -940,12 +944,11 @@ img {
         width: 174px;
         float: left;
         color: #fff;
-        height:110px;
+        height: 110px;
         cursor: pointer;
         line-height: 30px;
         /*padding: 0 20px;*/
         position: relative;
-      
     }
 
         #mytab li p {
@@ -991,7 +994,7 @@ img {
 
         #mytab li.mycurrent {
             color: #000;
-              background:url(../img/hcustom/xzbj.png) no-repeat center bottom;
+            background: url(../img/hcustom/xzbj.png) no-repeat center bottom;
         }
 
 #mycontent {
@@ -999,85 +1002,100 @@ img {
 }
 
     #mycontent .mylist {
-        width:1260px;
-        margin:0 auto;
+        width: 1260px;
+        margin: 0 auto;
         display: none;
         padding: 30px;
-        background:#f8f8f8;
+        background: #f8f8f8;
     }
-#mycontent .mylist .info-list {
-    width:100%;
-    overflow:hidden;
-    line-height:24px;
-    margin-bottom:20px;
-}
+
+        #mycontent .mylist .info-list {
+            width: 100%;
+            overflow: hidden;
+            line-height: 24px;
+            margin-bottom: 20px;
+        }
+
 .if-left {
-    width:95px;
-    float:left;
-    color:#898989;
+    width: 95px;
+    float: left;
+    color: #898989;
 }
+
 .if-right {
-    width:1160px;
-    float:right;
+    width: 1160px;
+    float: right;
 }
-.if-right p{
-   margin:0;
-}
+
+    .if-right p {
+        margin: 0;
+    }
+
 .if-pic {
-    width:155px;
-    height:210px;
-    margin:0 10px 10px 0;
-    float:left;
+    width: 155px;
+    height: 210px;
+    margin: 0 10px 10px 0;
+    float: left;
 }
-.if-pic img{
-    width:155px;
-    height:210px;
-}
+
+    .if-pic img {
+        width: 155px;
+        height: 210px;
+    }
+
 .myadd {
-    cursor:pointer;
+    cursor: pointer;
 }
+
 .confirm {
     width: 110px;
     height: 30px;
-    text-align:center;
-    line-height:30px;
+    text-align: center;
+    line-height: 30px;
     background: #6f43be;
     color: #fff;
     border-radius: 15px;
     behavior: url(/lib/plugins/pie/PIE.htc);
 }
+
 .confp {
-    padding-left:150px;
+    padding-left: 150px;
 }
+
     .confp p {
-    color:#6f43bd;
-    font-size:18px;
+        color: #6f43bd;
+        font-size: 18px;
     }
+
 .deposit {
-    width:300px;
-    padding-left:200px;
+    width: 300px;
+    padding-left: 200px;
 }
+
     .deposit input {
-    width:85px;
-    height:24px;
-    line-height:24px;
-    padding:5px;
-    border:solid 1px #000;
-    background:#ebebeb;
-    color:#6f43be;
+        width: 85px;
+        height: 24px;
+        line-height: 24px;
+        padding: 5px;
+        border: solid 1px #000;
+        background: #ebebeb;
+        color: #6f43be;
     }
+
 .conversion {
-    width:257px;
-    margin:20px auto;
-    font-size:18px;
+    width: 257px;
+    margin: 20px auto;
+    font-size: 18px;
 }
+
     .conversion span {
-    color:#6f43be;
+        color: #6f43be;
     }
-        .deposit p {
-   font-size:18px;
-   text-align:center;
-    }
+
+.deposit p {
+    font-size: 18px;
+    text-align: center;
+}
 /*个人主页end*/
 /*故事详情页*/
 .youlove {
@@ -1096,56 +1114,62 @@ img {
     text-align: center;
     color: #ccc;
     padding-top: 5px;
-    padding-bottom:40px;
+    padding-bottom: 40px;
 }
+
 .sy-top {
-    height:55px; 
-    padding-top:30px;
+    height: 55px;
+    padding-top: 30px;
 }
+
 .sy-title {
-    width:1000px;
-    float:left;
+    width: 1000px;
+    float: left;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size:50px;
+    font-size: 50px;
 }
+
 .sy-throw {
-    width:120px;
-    height:40px;
-    line-height:40px;
-    text-align:center;
-    font-size:14px;
-    color:#644499;
-    border-radius:20px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 14px;
+    color: #644499;
+    border-radius: 20px;
     behavior: url(/lib/plugins/pie/PIE.htc);
-    float:right;
-    border:solid 1px #6f43be;
-    cursor:pointer;
-    margin-top:5px;
+    float: right;
+    border: solid 1px #6f43be;
+    cursor: pointer;
+    margin-top: 5px;
 }
+
 .sy-cont {
-    width:100%;
-    height:46px;
-    line-height:46px;
-    float:left;
+    width: 100%;
+    height: 46px;
+    line-height: 46px;
+    float: left;
 }
+
 .sy-author {
-    width:180px;
-    height:42px;
-    line-height:42px;
-    color:#fff;
-    font-size:24px;
-    text-align:center;
-    background:#6f43be;
-    border-radius:21px;
+    width: 180px;
+    height: 42px;
+    line-height: 42px;
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    background: #6f43be;
+    border-radius: 21px;
     behavior: url(/lib/plugins/pie/PIE.htc);
 }
-.sy-main{
-    width:100%;
-    font-size:18px;
-    line-height:24px;
-    color:#333;
+
+.sy-main {
+    width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+    color: #333;
 }
 /*活动报名*/
 #acouter {
@@ -1185,7 +1209,125 @@ img {
 }
 
     #accontent .aclist {
-        padding:10px;
+        padding: 10px;
         line-height: 25px;
         display: none;
     }
+/*商铺首页*/
+/*banner样式开始*/
+#full-screen-slider {
+    width: 100%;
+    height: 500px;
+    float: left;
+    position: relative;
+}
+
+#slides {
+    display: block;
+    width: 100%;
+    height: 500px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+    #slides li {
+        display: block;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+    }
+
+        #slides li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-indent: -9999px;
+        }
+
+#pagination {
+    display: block;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 470px;
+    z-index: 9900;
+    padding: 5px 15px 5px 0;
+    margin: 0;
+}
+
+    #pagination li {
+        display: block;
+        list-style: none;
+        width: 10px;
+        height: 10px;
+        float: left;
+        margin-left: 15px;
+        border-radius: 5px;
+        /*background: #FFF;*/
+        border: solid 1px #fff;
+    }
+
+        #pagination li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            text-indent: -9999px;
+        }
+
+        #pagination li.current {
+            background: #fff;
+        }
+/*banner样式结束*/
+.shop-head {
+    text-align:center;
+    padding:30px 0;
+    overflow:hidden;
+}
+.shop-package {
+    width:100%;
+    padding:40px 0;
+    background:#ebebeb;
+    overflow:hidden;
+}
+.shop-recom {
+    width:1105px;
+    margin:0 auto;
+    color:#999;
+    font-size:18px;
+}
+.shop-img {
+    width:100%;
+    height:550px;
+    padding:10px;
+    background:#fff;
+}
+.sp-left {
+    width:470px;
+    float:left;
+    height:550px;
+}
+.sp-right {
+    width:635px;
+    float:left;
+    height:550px;
+}
+    .sp-right img {
+     float:left;
+    }
+    .shop-reveal {
+     width:1100px;
+    margin:40px auto;
+    color:#999;
+    font-size:18px;
+    overflow:hidden;
+}
+.shop-pic img{
+    float:left;
+}
