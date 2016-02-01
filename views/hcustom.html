@@ -7,6 +7,9 @@
     <link href="../lib/css/hcustom.css" rel="stylesheet" />
     <script src="../lib/js/jquery-1.9.1.min.js"></script>
     <script src="../lib/js/imgroll.js"></script>
+    <!--[if lt IE 10]>
+    <script src="../lib/plugins/pie/PIE.js"></script>
+    <![endif]-->
     <script>
         $(function () {
             window.onload = function () {
@@ -20,9 +23,28 @@
                     $this.addClass('current');
                     $list.css('display', 'none');
                     $list.eq($t).css('display', 'block');
+                });
+                var $pvli = $('#pvtab li');
+                var $pvlist = $('#pvcontent .pvlist');
+
+                $pvli.click(function () {
+                    var $this = $(this);
+                    var $t = $this.index();
+                    $pvli.removeClass();
+                    $this.addClass('pvcurrent');
+                    $pvlist.css('display', 'none');
+                    $pvlist.eq($t).css('display', 'block');
                 })
             }
         });
+        function fn_next(num) {
+            var $tyli = $('#tytab li');
+            var $tylist = $('#tycontent .tylist');
+            $tyli.removeClass();
+            $tyli.eq(num).addClass('tycurrent');
+            $tylist.css('display', 'none');
+            $tylist.eq(num).css('display', 'block');
+        }
     </script>
 </head>
 <body>
@@ -62,22 +84,114 @@
     </header>
     <div id="outer">
         <ul id="tab">
-            <li>
+            <li class="current">
                 <img src="../lib/img/hcustom/sr.png" />
                 <p>私人定制</p>
             </li>
-            <li class="current">
+            <li>
                 <img src="../lib/img/hcustom/gd.png" />
                 <p>高端定制</p>
             </li>
 
         </ul>
-        <img src="../lib/img/hcustom/banner.jpg" />
+        <img src="../lib/img/hcustom/banner.jpg" style="width:100%;height:100px;"/>
         <div id="content">
-            <div class="list">
-                <div class="container">私人定制</div>
-            </div>
             <div class="list" style="display:block;">
+                <div id="pvouter">
+                    <div class="pvbj">
+                        <ul id="pvtab">
+                            <li class="pvcurrent">婚纱</li>
+                            <li>礼服</li>
+                            <li>旗袍</li>
+                        </ul>
+                    </div>
+                    <div id="pvcontent">
+                        <div class="pvlist" style="display:block;">
+                            <div class="pv-star">
+                                <div id="tyouter">
+                                    <ul id="tytab">
+                                        <li class="tycurrent">体型</li>
+                                        <li>款式</li>
+                                        <li>风格</li>
+                                    </ul>
+                                    <div id="tycontent">
+                                        <div class="tylist" style="display:block;">
+                                            <div class="pvshape">
+                                                <p>请选择最接近您的体型图</p>
+                                                <div class="pv-chose">
+                                                    <img src="../lib/img/hcustom/icon5.jpg" />
+                                                </div>
+                                                <div class="pv-next" onclick="fn_next(1)">下一步</div>
+                                            </div>
+                                        </div>
+                                        <div class="tylist">
+                                            <div class="pvshape">
+                                                <p>请选择款式</p> 
+                                                <div class="pv-next" onclick="fn_next(0)">上一步</div><br/>
+                                                <div class="pv-next" onclick="fn_next(2)">下一步</div>
+                                            </div>
+                                        </div>
+                                        <div class="tylist">
+                                            <div class="pvshape">
+                                                <p>请选择风格</p>
+                                                <div class="pv-next" onclick="fn_next(1)">上一步</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pv-layer">
+                                <div class="pv-star">
+                                    <div class="pv-title">基本款定制</div>
+                                    <div class="pv-basic">
+                                        <div class="basic-list">
+                                            <img src="../lib/img/pv06.jpg" />
+                                            <p>最受欢迎婚纱</p>
+                                        </div>
+                                        <div class="basic-list">
+                                            <img src="../lib/img/pv06.jpg" />
+                                            <p>最受欢迎婚纱</p>
+                                        </div>
+                                        <div class="basic-list">
+                                            <img src="../lib/img/pv06.jpg" />
+                                            <p>最受欢迎婚纱</p>
+                                        </div>
+                                        <div class="basic-list">
+                                            <img src="../lib/img/pv06.jpg" />
+                                            <p>最受欢迎婚纱</p>
+                                        </div>
+                                        <div class="basic-list">
+                                            <img src="../lib/img/pv06.jpg" />
+                                            <p>最受欢迎婚纱</p>
+                                        </div>
+                                        <div class="basic-list">
+                                            <img src="../lib/img/pv06.jpg" />
+                                            <p>最受欢迎婚纱</p>
+                                        </div>
+                                        <div class="basic-list">
+                                            <img src="../lib/img/pv06.jpg" />
+                                            <p>最受欢迎婚纱</p>
+                                        </div>
+                                        <div class="basic-list">
+                                            <img src="../lib/img/pv06.jpg" />
+                                            <p>最受欢迎婚纱</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pvlist">
+                            礼服
+                        </div>
+                        <div class="pvlist">
+                            旗袍
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="list">
                 <div class="container recommend">
                     <p>推荐设计师</p>
                     <div class="design">

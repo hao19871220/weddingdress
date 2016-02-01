@@ -47,86 +47,252 @@
     #content .list {
         line-height: 25px;
         display: none;
-        margin: 0 30px;
+        /*margin: 0 30px;*/
         padding: 10px 0;
     }
+
 .recommend {
-    overflow:hidden;
-}
-.recommend p {
-    padding-left: 25px;
+    overflow: hidden;
 }
 
-.recommend .rc-list {
-    width: 100%;
-    height: 300px;
-    background: #ebebeb;
-    margin-bottom:10px;
-}
+    .recommend p {
+        padding-left: 25px;
+    }
 
-    .recommend .rc-list .rc-img{
-        width: 440px;
+    .recommend .rc-list {
+        width: 100%;
         height: 300px;
+        background: #ebebeb;
+        margin-bottom: 10px;
+    }
+
+        .recommend .rc-list .rc-img {
+            width: 440px;
+            height: 300px;
+            float: left;
+        }
+
+    .recommend .rc-content {
+        width: 400px;
+        padding: 20px;
+        height: 260px;
         float: left;
     }
 
-.recommend .rc-content {
-    width: 400px;
-    padding: 20px;
-    height:260px;
-    float:left;
-}
-.recommend .title {
-   font-weight:bold;
-   padding:0 0 10px 0;
-}
-.recommend .rc-content p{
-    padding:0;
-    margin:0;
-    line-height:24px;
-}
-.recommend .nrong {
-    height:190px;
-    overflow:hidden;
-}
-.recommend .follow {
-    line-height:40px;
-}
-.recommend .follow img{
-   vertical-align:middle;
-   width:35px;
-   height:35px;
-   padding-right:12px;
-}
-.designer {
-    width:100%;
-    padding:20px 0;
-    overflow:hidden;
-}
-.designer .ds-list{
-    width:100%;
-    margin-left:-10px;
-    float:left;
-}
-    .designer .ds-main {
-    width:210px;
-    height:210px;
-    float:left;
-    margin-left:10px;
-    position:relative;
-    margin-bottom:10px;
+    .recommend .title {
+        font-weight: bold;
+        padding: 0 0 10px 0;
     }
-.ds-title {
-    width:200px;
-    height:30px;
-    line-height:30px;
-    position:absolute;
-    background:rgba(0,0,0,0.5);
-    color:#fff;
-    left:0;
-    bottom:0;
-    padding-left:10px;
+
+    .recommend .rc-content p {
+        padding: 0;
+        margin: 0;
+        line-height: 24px;
+    }
+
+    .recommend .nrong {
+        height: 190px;
+        overflow: hidden;
+    }
+
+    .recommend .follow {
+        line-height: 40px;
+    }
+
+        .recommend .follow img {
+            vertical-align: middle;
+            width: 35px;
+            height: 35px;
+            padding-right: 12px;
+        }
+
+.designer {
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
 }
+
+    .designer .ds-list {
+        width: 100%;
+        margin-left: -10px;
+        float: left;
+    }
+
+    .designer .ds-main {
+        width: 210px;
+        height: 210px;
+        float: left;
+        margin-left: 10px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+
+.ds-title {
+    width: 200px;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    padding-left: 10px;
+}
+
 .ds-name {
-    font-weight:bold;padding-right:10px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+/*私人定制*/
+#pvouter {
+    width: 100%;
+    /*margin: 150px auto;*/
+}
+
+    #pvouter .pvbj {
+        width: 100%;
+        height: 40px;
+        border-bottom: solid 1px #ddd;
+    }
+
+#pvtab {
+    overflow: hidden;
+    zoom: 1;
+    height: 40px;
+    width: 480px;
+    margin: 0 auto;
+}
+
+    #pvtab li {
+        float: left;
+        height: 40px;
+        cursor: pointer;
+        line-height: 40px;
+        font-size: 16px;
+        width: 100px;
+        text-align: center;
+        margin: 0 30px;
+    }
+
+        #pvtab li.pvcurrent {
+            height: 38px;
+            color: #644499;
+            border-bottom: solid 2px #644499;
+        }
+
+#pvcontent {
+    border-top-width: 0;
+}
+
+    #pvcontent .pvlist {
+        line-height: 25px;
+        display: none;
+        padding: 10px 0;
+    }
+/*私人定制*/
+.pv-layer {
+    width: 100%;
+    padding: 30px 0;
+    background: #ebebeb;
+    overflow: hidden;
+}
+
+.pv-star {
+    width: 1200px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.pv-title {
+    font-size: 28px;
+    color: #999;
+    padding-bottom: 15px;
+}
+
+.pv-basic {
+    width: 100%;
+    overflow: hidden;
+}
+
+    .pv-basic .basic-list {
+        width: 280px;
+        float: left;
+        margin: 0 20px 20px 0;
+        text-align: center;
+    }
+
+        .pv-basic .basic-list img {
+            width: 280px;
+            height: 375px;
+        }
+
+#tyouter {
+    width: 100%;
+    margin: 25px auto;
+}
+
+#tytab {
+    overflow: hidden;
+    zoom: 1;
+    width: 300px;
+    height: 34px;
+    border-radius: 17px;
+    background: #dadada;
+    margin: 0 auto;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+
+    #tytab li {
+        float: left;
+        width: 100px;
+        height: 34px;
+        cursor: pointer;
+        line-height: 34px;
+        text-align: center;
+        font-size: 18px;
+        color: #644499;
+    }
+
+        #tytab li.tycurrent {
+            background: #644499;
+            border-radius: 17px;
+            color: #fff;
+            behavior: url(/lib/plugins/pie/PIE.htc);
+        }
+
+#tycontent {
+    border-top-width: 0;
+}
+
+    #tycontent .tylist {
+        line-height: 25px;
+        display: none;
+        /*margin: 0 30px;
+        padding: 10px 0;*/
+    }
+.pvshape {
+    width:1000px;
+    text-align:center;
+    margin:0 auto;
+}
+    .pvshape p {
+    font-size:14px;
+    color:#644499;
+    }
+.pv-next {
+    width:220px;
+    height:34px;
+    line-height:34px;
+    background:#644499;
+    color:#fff;
+    border-radius:17px;
+    text-align:center;
+    font-size:14px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+    margin:0 auto;
+    cursor:pointer;
+}
+.pv-chose {
+    text-align:center;
+    padding:10px 0;
 }
