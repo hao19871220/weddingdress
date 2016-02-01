@@ -1,0 +1,382 @@
+﻿body {
+}
+
+img {
+    vertical-align: middle;
+}
+
+.in-head {
+    height: 420px;
+}
+/*banner样式开始*/
+#full-screen-slider {
+    width: 925px;
+    height: 420px;
+    float: left;
+    position: relative;
+}
+
+#slides {
+    display: block;
+    width: 100%;
+    height: 420px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+    #slides li {
+        display: block;
+        width: 100%;
+        height: 100%;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+    }
+
+        #slides li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-indent: -9999px;
+        }
+
+#pagination {
+    display: block;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 390px;
+    z-index: 9900;
+    padding: 5px 15px 5px 0;
+    margin: 0;
+}
+
+    #pagination li {
+        display: block;
+        list-style: none;
+        width: 10px;
+        height: 10px;
+        float: left;
+        margin-left: 15px;
+        border-radius: 5px;
+        background: #d8dbdc;
+        behavior: url(/lib/plugins/pie/PIE.htc);
+    }
+
+        #pagination li a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            text-indent: -9999px;
+        }
+
+        #pagination li.current {
+            background: #bd8fdb;
+        }
+/*banner样式结束*/
+.in-join {
+    width: 385px;
+    height: 420px;
+    float: right;
+    cursor: pointer;
+}
+
+.customized {
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+.in-title {
+    width: 800px;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: solid 1px #ddd;
+}
+
+.in-select {
+    width: 100px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+    .in-select select {
+        font-size: 24px;
+        font-weight: bold;
+        color: #aa8fdb;
+        outline: none;
+        border: none;
+    }
+
+#inouter {
+    width: 100%;
+    margin: 20px auto;
+}
+
+#intab {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    zoom: 1;
+    background: url(../img/index/tabbj.jpg) no-repeat center bottom;
+}
+
+    #intab li {
+        width: 33%;
+        float: left;
+        height: 80px;
+        cursor: pointer;
+        line-height: 60px;
+        text-align: center;
+        font-size: 20px;
+        color: #232323;
+        position: relative;
+        font-weight: bold;
+    }
+
+        #intab li.incurrent {
+            /*color: #000;
+                    background: #ccc;*/
+        }
+
+#incontent {
+    /*border: 1px solid #000;*/
+    border-top-width: 0;
+}
+
+    #incontent .inlist {
+        line-height: 25px;
+        display: none;
+        overflow: hidden;
+    }
+
+.in-num {
+    font-size: 70px;
+    color: #999;
+    font-weight: normal;
+    padding-right: 10px;
+}
+
+.numcolor {
+    color: #6c4f9e;
+}
+
+.in-main {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.in-list {
+    width: 180px;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    margin-right: 40px;
+}
+
+    .in-list img {
+        height: 200px;
+    }
+
+.in-biao {
+    font-size: 18px;
+    color: #303030;
+    padding: 10px 0;
+}
+
+.in-list p {
+    margin: 0;
+    line-height: 24px;
+}
+
+.inbtn {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    background: #eee9f8;
+    border: solid 1px #aa8fdb;
+    border-radius: 20px;
+    text-align: center;
+    color: #aa8fdb;
+    cursor: pointer;
+    margin: 30px auto 5px auto;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+
+.inmao {
+    color: #aa8fdb;
+    text-align: center;
+}
+
+.in-love {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+    .in-love .love-list {
+        width: 430px;
+        float: left;
+        padding: 0 5px 30px 5px;
+        text-align: center;
+    }
+
+        .in-love .love-list img {
+            width: 430px;
+            height: 450px;
+        }
+
+        .in-love .love-list .love-title {
+            font-size: 24px;
+            padding: 25px 0 10px 0;
+        }
+
+        .in-love .love-list p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+.in-intro {
+    font-size: 24px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.in-wedding {
+    width: 100%;
+    height: 400px;
+    margin: 50px 0 20px 0;
+}
+
+.wed-left {
+    width: 800px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+
+.wed-right {
+    width: 520px;
+    height: 400px;
+    float: left;
+    position: relative;
+}
+
+.wed-left img {
+    width: 800px;
+    height: 400px;
+}
+
+.wed-right img {
+    width: 520px;
+    height: 400px;
+}
+
+.wed-main {
+    width: 100%;
+    height: 76px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding-top: 10px;
+}
+
+    .wed-main p {
+        font-size: 24px;
+        padding: 0 20px;
+        margin: 0;
+        line-height: 30px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+.wed-cont {
+    width: 480px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 20px;
+    overflow: hidden;
+}
+
+    .wed-cont .wedm {
+        width: 100%;
+        line-height: 30px;
+    }
+
+    .wed-cont p {
+        line-height: 30px;
+        font-size: 18px;
+        margin: 0;
+    }
+
+    .wed-cont .wedl {
+        width: 50%;
+        font-size: 24px;
+        float: left;
+    }
+
+    .wed-cont .wedr {
+        width: 50%;
+        float: left;
+        text-align: right;
+        color: #ab8fdb;
+        font-size: 18px;
+    }
+
+.dress {
+    width: 408px;
+    padding: 10px;
+    float: left;
+    margin: 0 10px 20px 0;
+    border: solid 1px #ddd;
+}
+
+    .dress img {
+        width: 408px;
+        height: 290px;
+    }
+
+    .dress p {
+        font-size: 18px;
+        text-align: center;
+        margin: 0;
+        line-height: 60px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+.in-private {
+    width:100%;
+    height:360px;
+    margin:30px 0;
+}
+.in-design {
+    width:270px;
+    height:200px;
+    padding:80px 40px;
+    background:#f5f5f5;
+    float:left;
+}
+.in-video {
+    width:360px;
+    height:360px;
+    float:left;
+}
+.in-video img{
+    width:360px;
+    height:360px;
+}
