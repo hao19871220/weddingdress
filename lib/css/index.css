@@ -234,14 +234,16 @@ img {
             height: 450px;
         }
 
-        .in-love .love-list .love-title {
+        .in-love .love-title {
             font-size: 24px;
             padding: 25px 0 10px 0;
+            text-align:center;
         }
 
-        .in-love .love-list p {
+        .in-love p {
             margin: 0;
             font-size: 18px;
+            text-align:center;
         }
 
 .in-intro {
@@ -379,4 +381,90 @@ img {
 .in-video img{
     width:360px;
     height:360px;
+}
+.in-picone {
+    width:240px;
+    height:360px;
+    float:left;
+    margin:0 10px;
+}
+.in-pictwo {
+     width:346px;
+    height:360px;
+    float:left;
+}
+.in-private img {
+    max-height:360px;
+}
+.design-name {
+    font-size:24px;
+    line-height:30px;
+}
+.in-time {
+    font-size:18px;
+    line-height:30px;
+}
+.line-list {
+    width:320px;
+    float:left;
+    margin-right:10px;
+}
+.in-service {
+     width:320px;
+     height:300px;
+    float:left;
+    margin-right:10px;
+    position:relative;
+}
+    .in-service img {
+    width:320px;
+     height:300px;
+    }
+.serbj {
+    width:100%;
+    height:300px;
+    position:absolute;
+    top:0;
+    left:0;
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    text-align:center;
+}
+.sertitle {
+    font-size:24px;
+    padding-top:90px;
+    line-height:60px;
+}
+.serbj p {
+    font-size:12px;
+    line-height:24px;
+}
+.in-down {
+    height:100px;
+}
+.dleft {
+    width:438px;
+    height:100px;
+    float:left;
+}
+.dline {
+    width:2px;
+    height:34px;
+    background:#ddd;
+    margin-top:35px;
+    float:left;
+}
+.dleft img {
+    padding:22px 33px 0 70px;
+    float:left;
+}
+.dmain {
+    width:270px;
+    float:left;
+    padding-top:22px;
+    color:#fff;
+}
+.dtitle {
+    font-size:28px;
+    padding-bottom:10px;
 }
