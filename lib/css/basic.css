@@ -1605,10 +1605,177 @@ img {
     position: absolute;
     top: 10px;
     right: 10px;
-    line-height:60px;
-    text-align:center;
+    line-height: 60px;
+    text-align: center;
     behavior: url(/lib/plugins/pie/PIE.htc);
 }
+
     .wk-hot span {
-    font-size:22px;
+        font-size: 22px;
     }
+/*婚礼策划*/
+#plouter {
+    width: 100%;
+    margin: 30px auto;
+}
+
+#pltab {
+    overflow: hidden;
+    zoom: 1;
+    width: 960px;
+    margin: 0 auto;
+    /*background: #000;*/
+}
+
+    #pltab li {
+        width: 240px;
+        float: left;
+        color: #fff;
+        height: 90px;
+        cursor: pointer;
+        line-height: 30px;
+        /*padding: 0 20px;*/
+        position: relative;
+    }
+
+        #pltab li p {
+            margin: 0;
+            text-align: center;
+            font-size: 18px;
+            color: #644498;
+            padding-top: 40px;
+        }
+
+        #pltab li .plline {
+            width: 240px;
+            position: absolute;
+            height: 1px;
+            /*left: 0;*/
+            top: 16px;
+            background: #6f43be;
+        }
+
+        #pltab li .plyuan {
+            width: 41px;
+            height: 36px;
+            background: #fff;
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -22px;
+        }
+
+        #pltab li .rond {
+            width: 29px;
+            height: 29px;
+            border: solid 2px #6f43be;
+            background: #fff;
+            border-radius: 50%;
+            margin: 0 auto;
+            behavior: url(/lib/plugins/pie/PIE.htc);
+        }
+
+        #pltab li .shi {
+            background: #6f43be;
+        }
+
+        #pltab li.plcurrent {
+            color: #000;
+        }
+
+#plcontent {
+    border-top-width: 0;
+}
+
+    #plcontent .pllist {
+        width: 1200px;
+        margin: 0 auto;
+        display: none;
+        padding: 20px 0;
+    }
+
+.pl-title {
+    padding: 10px 0;
+    color: #999;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+    .pl-title span {
+        font-size: 28px;
+        padding: 0 10px;
+    }
+
+.pl-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+    .pl-img img {
+        padding: 0 10px 10px 0;
+        float: left;
+    }
+
+.plbj {
+    width: 100%;
+    overflow: hidden;
+    background: #ebebeb;
+    padding: 10px 0;
+    margin-bottom: 20px;
+}
+
+.pl-ceng {
+    width: 1160px;
+    padding: 10px 20px;
+    height: 160px;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.pltime {
+    width: 162px;
+    float: left;
+    padding-top: 33px;
+}
+
+.plcont {
+    width: 450px;
+    float: left;
+    height: 160px;
+}
+
+.plprize {
+    width: 135px;
+    float: left;
+    height: 160px;
+    text-align: center;
+}
+
+.plpic {
+    width: 410px;
+    float: left;
+    height: 160px;
+}
+
+.plname {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-top: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.plmiao {
+    color: #999;
+    line-height: 24px;
+}
+
+.pleval {
+    padding: 10px 0 20px 0;
+}
+
+.pladdress {
+    color: #999;
+}
