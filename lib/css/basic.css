@@ -1270,6 +1270,7 @@ img {
         border-radius: 5px;
         /*background: #FFF;*/
         border: solid 1px #fff;
+        behavior: url(/lib/plugins/pie/PIE.htc);
     }
 
         #pagination li a {
@@ -1349,29 +1350,31 @@ img {
 .sv-know {
     width: 250px;
     height: 34px;
-    line-height:34px;
+    line-height: 34px;
     float: left;
     border: solid 1px #644498;
     background: #e0d8fc;
     border-radius: 18px;
-    font-size:18px;
-    color:#6f43be;
-      cursor:pointer;
+    font-size: 18px;
+    color: #6f43be;
+    cursor: pointer;
     behavior: url(/lib/plugins/pie/PIE.htc);
 }
+
 .sv-ment {
     width: 250px;
     height: 34px;
-    line-height:34px;
+    line-height: 34px;
     float: right;
     border: solid 1px #644498;
     background: #644498;
     border-radius: 18px;
-    font-size:18px;
-    color:#fff;
-    cursor:pointer;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
     behavior: url(/lib/plugins/pie/PIE.htc);
 }
+
 #svouter {
     width: 100%;
     margin: 40px auto;
@@ -1388,35 +1391,38 @@ img {
     #svtab li {
         float: left;
         height: 172px;
-        width:140px;
-         margin: 0 65px;
+        width: 140px;
+        margin: 0 65px;
         cursor: pointer;
     }
+
         #svtab li .svname {
-         height: 56px;
-        width:56px;
-        cursor: pointer;
-        line-height: 28px;
-        padding: 40px;
-        font-size: 16px;
-        font-weight: bold;
-        font-size:24px;
-        color:#6f43be;
-        border:solid 2px #6f43be;
-        border-radius:50%;
-         behavior: url(/lib/plugins/pie/PIE.htc);
-        }
-        #svtab li.svcurrent {
-          background:url(../img/xzbj.png) no-repeat center bottom;
-            color:#fff;
-        }
-         #svtab li.svcurrent .svname{
-               color:#fff;
-            background:#6f43be;
+            height: 56px;
+            width: 56px;
+            cursor: pointer;
+            line-height: 28px;
+            padding: 40px;
+            font-size: 16px;
+            font-weight: bold;
+            font-size: 24px;
+            color: #6f43be;
+            border: solid 2px #6f43be;
+            border-radius: 50%;
+            behavior: url(/lib/plugins/pie/PIE.htc);
         }
 
+        #svtab li.svcurrent {
+            background: url(../img/xzbj.png) no-repeat center bottom;
+            color: #fff;
+        }
+
+            #svtab li.svcurrent .svname {
+                color: #fff;
+                background: #6f43be;
+            }
+
 #svcontent {
-    background:#ebebeb;
+    background: #ebebeb;
 }
 
     #svcontent .svlist {
@@ -1424,35 +1430,185 @@ img {
         display: none;
         padding: 10px;
     }
+
 .sv-place {
-    width:100%;
-    height:24px;
-    line-height:24px;
-    margin:20px 0;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    margin: 20px 0;
 }
+
     .sv-place .plt {
-    width:130px;
-    float:left;
-    padding:0 10px;
-    font-size:18px;
-    color:#6f43be;
-    font-weight:bold;
+        width: 130px;
+        float: left;
+        padding: 0 10px;
+        font-size: 18px;
+        color: #6f43be;
+        font-weight: bold;
     }
+
     .sv-place .pls {
-    width:100px;
-    height:24px;
-    background:#6f43be;
-    border-radius:12px;
-    color:#fff;
-     behavior: url(/lib/plugins/pie/PIE.htc);
-     float:left;
-     text-align:center;
-     padding-left:10px;
+        width: 100px;
+        height: 24px;
+        background: #6f43be;
+        border-radius: 12px;
+        color: #fff;
+        behavior: url(/lib/plugins/pie/PIE.htc);
+        float: left;
+        text-align: center;
+        padding-left: 10px;
     }
+
         .sv-place .pls select {
-        background:none;
-        color:#fff;
-        border:0;
-        height:24px;
-        outline:none;
+            background: none;
+            color: #fff;
+            border: 0;
+            height: 24px;
+            outline: none;
         }
+/*婚纱购物*/
+#wkouter {
+    width: 1200px;
+    margin: 40px auto;
+}
+
+#wktab {
+    width: 920px;
+    height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+    background: #e4e4e4;
+    border-radius: 20px;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+
+    #wktab li {
+        float: left;
+        height: 40px;
+        cursor: pointer;
+        line-height: 40px;
+        padding: 0 30px;
+        font-size: 24px;
+        border-radius: 20px;
+        behavior: url(/lib/plugins/pie/PIE.htc);
+    }
+
+        #wktab li.wkcurrent {
+            color: #fff;
+            background: #644498;
+        }
+
+#wkcontent {
+    border-top-width: 0;
+}
+
+    #wkcontent .wklist {
+        line-height: 25px;
+        display: none;
+    }
+
+.wk-cont {
+    width: 810px;
+    height: 130px;
+    margin: 40px auto;
+}
+
+.wk-img {
+    height: 130px;
+    width: 95px;
+    text-align: center;
+    float: left;
+    margin: 0 20px;
+}
+
+.wk-border {
+    height: 128px;
+    width: 93px;
+    border: solid 1px #644498;
+}
+
+.wk-xuan {
+    width: 600px;
+    height: 24px;
+    line-height: 20px;
+    margin: 10px auto;
+}
+
+.wk-select {
+    width: 180px;
+    height: 24px;
+    border-bottom: solid 1px #000;
+    margin-right: 20px;
+    float: left;
+}
+
+    .wk-select select {
+        width: 180px;
+        height: 24px;
+        line-height: 24px;
+        border: 0;
+        font-size: 14px;
+        color: #606060;
+        outline: none;
+    }
+
+.wk-main {
+    width: 1200px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+
+.wk-include {
+    width: 280px;
+    float: left;
+    margin: 10px;
+    overflow: hidden;
+}
+
+.wktu {
+    width: 100%;
+    height: 378px;
+    position: relative;
+}
+
+    .wktu img {
+        width: 100%;
+        height: 378px;
+    }
+
+.wkr {
+    width: 200px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+    .wkr .wktt {
+    }
+
+.wkf {
+    width: 40px;
+    height: 30px;
+    float: left;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.wk-hot {
+    width: 60px;
+    height: 60px;
+    background: #6f43be;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    line-height:60px;
+    text-align:center;
+    behavior: url(/lib/plugins/pie/PIE.htc);
+}
+    .wk-hot span {
+    font-size:22px;
+    }
