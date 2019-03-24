@@ -125,7 +125,7 @@ img {
     height: 80px;
     overflow: hidden;
     zoom: 1;
-    background: url(../img/index/tabbj.jpg) no-repeat center bottom;
+    background: url(../img/index/tabbj.jpg?__inline) no-repeat center bottom;
 }
 
     #intab li {
